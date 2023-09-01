@@ -4,25 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
     <title>Cadastro de ADM</title>
-
-<style>
-    body{
-        background-color: black;
-    }
-
-    #img{
-        text-align: center;
-    }
-
-    #box{
-        width:80%;
-	    height:100%;
-	    background-color:#ffe780;
-	    border-radius: 35px;
-        margin: auto;
-    }
-</style>
 
 </head>
 <body>
@@ -32,25 +18,29 @@
 </div>
 
 <br>
-<div id="box">
+<div class="container">
     <br><br>
 <form action="cadastra_adm.php" method="POST">
+
     <div class="form-group">
-        <label for="nome"> Nome </label>
-        <input type="text"  name="nome" class="form-control" >
+        <label for="nome"> Nome </label><br>
+        <input type="text"  name="nome" class="form-control" placeholder="Digite seu nome">
 	</div>
 	  
     <div class="form-group">
-	    <label for="email"> Email </label>
-        <input type="email" name="email" class="form-control">
+	    <label for="email"> Email </label><br>
+        <input type="text" name="email" class="form-control" placeholder="Digite o email">
 	</div> 
 
     <div class="form-group">
-	    <label for="cpf"> Senha </label>
-        <input type="text"  name="senha" class="form-control">
-    </div>
+	    <label for="cpf"> Senha </label><br>
+        <input type="password"  name="senha" class="form-control" placeholder="Digite a senha">
 
-    <input type="submit" value="Cadastrar" class="btn btn-outline-secondary">
+        <br><br>
+        <input type="password"  name="senhacon" class="form-control" placeholder="Confirme a senha">
+    </div><br><br>
+
+    <input type="submit" value="Cadastrar" class="btn">
 
    </form>
    <br><br>
