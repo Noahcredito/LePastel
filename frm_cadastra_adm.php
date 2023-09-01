@@ -4,25 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <title>Cadastro de ADM</title>
-
-<style>
-    body{
-        background-color: black;
-    }
-
-    #img{
-        text-align: center;
-    }
-
-    #box{
-        width:80%;
-	    height:100%;
-	    background-color:#ffe780;
-	    border-radius: 35px;
-        margin: auto;
-    }
-</style>
 
 </head>
 <body>
