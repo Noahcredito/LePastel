@@ -29,7 +29,9 @@ CREATE TABLE tb_cliente
  bairro_cli VARCHAR(20),
  rua_cli VARCHAR(40),
  numero_cli VARCHAR(4),
- telefone_cli VARCHAR(15)
+ telefone_cli VARCHAR(15),
+ cep_cli VARCHAR(10),
+ cidade_cli VARCHAR(50)
 );
 
 CREATE TABLE tb_sorteio
