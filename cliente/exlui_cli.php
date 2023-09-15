@@ -14,7 +14,7 @@
 
      /*1- realizando a conexao com o banco de dados (local, usuario,senha,nomeBanco)*/
      //$con=mysqli_connect("localhost","root","","bd_projeto");
-     require "conexao.php"; 
+     require "../conexao.php"; 
 	 
     /*2- pegando o valor do id vindo de del_cliente*/
 	$id_cli=$_GET["id"];

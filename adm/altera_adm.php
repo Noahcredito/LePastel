@@ -13,7 +13,7 @@
 
     /*1- realizando a conexao com o banco de dados (local, usuario,senha,nomeBanco)*/
     //$con=mysqli_connect("localhost","root","","bd_LePastel");
-    require "conexao.php";
+    require "../conexao.php";
     
     /*2- pegando os dados vindos do formulario e armazenando em variaveis */
       $id=$_POST["id"];
