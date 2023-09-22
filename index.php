@@ -7,18 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 <style>
 body {margin:0;}
-/*.navbar{
+.navbar{
   background-color: #000000;
   position: fixed;
   top: 0;
   width: 200px;
   height: 100%;
-}*/
+}
 .box{
+  font-size: 23px;
   text-align: center;
   background-color: #FFFFFF;
-  width: 550px;
-  height: 350px;
+  width: 600px;
+  height: 550px;
   border-radius: 50px;
   padding: 0.1px;
   position: absolute;
@@ -27,75 +28,65 @@ body {margin:0;}
   left: 250px;
   font-family: Alice;
 }
-.imagem{
+.imagem1{
   padding: 0.1px;
   position: absolute;
-  top: 50%;
+  top: 34.5%;
   transform: translateY(-50%);
-  left: 1000px;
+  left: 880px;
 }
-.bar{
-  height: 7px;
-  width: 70px;
-  background-color: #FFFFFF;
+.imagem2{
+  padding: 0.1px;
+  position: absolute;
+  top: 65.5%;
+  transform: translateY(-50%);
+  left: 1020px;
+}
+.container{
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+label{
+  cursor: pointer;
+  position: relative;
   display: block;
-  border-radius: 5px;
-  transition: 0.3s ease;
+  height: 22px;
+  width: 50px;
+}
+label span{
   position: absolute;
-  top: 35%;
-  left: 3.80%;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #FFFFFF;
+  transition: 0.25s ease-in-out;
 }
-#bar1{
-  transform: translateY(-14px);
+label span:nth-child(1){
+  top: 0;
 }
-#bar2{
-  transform: translateY(0);
+label span:nth-child(2){
+  top: 9px;
 }
-#bar3{
-  transform: translateY(14px);
+label span:nth-child(3){
+  top: 18px;
 }
-.nav li a
-{
-  color: #FFFFFF;
-  text-decoration: none;
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
 }
-.nav li a:hover
-{
-  font-weight: bold;
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
 }
-.nav li
-{
-  list-style: none;
-  padding: 16px 0;
-}
-.nav
-{
-  padding: 0;
-  margin: 0 20px;
-  transition: 0.3s ease;
-  display: none;
-}
-.menu-bg, #menu-bar{
-  top:0;
-  left:0;
-  position: absolute;
-}
-.menu-bg{
-  z-index: 1;
-  width: 0;
-  height: 0;
-  margin: 30px 0 20px 20px;
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
-#menu-bar{
-  z-index:2;
-}
-.change-bg
-{
-  width: 550px;
-  height: 540px;
-  transform: translate(-60%, -30%);
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top: 8px;
 }
 </style>
 </head>
@@ -103,6 +94,15 @@ body {margin:0;}
 
 <div class="navbar">
   <img src = "imagens/logo.png" width="200px" height="200px">
+  <div class="container">
+    <input type="checkbox" id="checkbox-menu">
+
+    <label for="checkbox-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
 </div>
 
 <div class="box">
@@ -114,23 +114,12 @@ body {margin:0;}
     <p>Equipe Le Pastel Food Delivery</p>	
   </div>
 
-  <div class="imagem">
-    <img src="imagens/foto_inicio.jpg" width="450px" height="450px">
+  <div class="imagem1">
+    <img src="imagens/foto1_inicio.jpeg" width="550px" height="295px">
   </div>
 
-  <div id="menu-bar">
-     <div id="menu">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
-     </div>
-     <ul class="nav" id="nav">
-         <li><a href="#">Pastéis Salgados</a></li>
-         <li><a href="#">Pastéis Doces</a></li>
-         <li><a href="#">Bebidas</a></li>
-     </ul>
-</div>
-<div class="menu-bg" id="menu-bg"></div>
-
+  <div class="imagem2">
+    <img src="imagens/foto2_inicio.jpeg" width="550px" height="300px">
+  </div>
 </body>
 </html>
