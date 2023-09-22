@@ -27,6 +27,7 @@ CREATE TABLE tb_cliente
  senha_cli VARCHAR(15),
  email_cli VARCHAR(40),
  bairro_cli VARCHAR(20),
+ complemento_cli VARCHAR(50),
  rua_cli VARCHAR(40),
  numero_cli VARCHAR(4),
  telefone_cli VARCHAR(15),
