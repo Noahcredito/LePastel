@@ -18,17 +18,20 @@
         $nome=$_POST["nome"];
         $email=$_POST["email"];
         $senha=$_POST["senha"];
+        $cep=$_POST["cep"];
+        $cidade=$_POST["cidade"];
         $bairro=$_POST["bairro"];
         $rua=$_POST["rua"];
         $numero=$_POST["numero"];
+        $complemento=$_POST["complemento"];
         $telefone=$_POST["telefone"];
 
     /*3- criando o comando sql para insercao do registro */
 
       $comandoSql="INSERT INTO tb_cliente
-      (nome_cli, senha_cli, email_cli, bairro_cli, rua_cli, numero_cli, telefone_cli)
+      (nome_cli, senha_cli, email_cli, cep_cli, cidade_cli, bairro_cli, rua_cli, numero_cli, complemento_cli, telefone_cli)
       VALUES
-      ('$nome', '$senha', '$email', '$bairro', '$rua', '$numero', '$telefone');";
+      ('$nome', '$senha', '$email', '$bairro', '$cep', '$cidade', '$rua', '$numero', '$complemento', '$telefone');";
      // echo $comandoSql;
 
     /*4- executando o comando sql */

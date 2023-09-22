@@ -22,22 +22,28 @@
      
      /*4- pegando os dados da consulta criada e exibindo */
      while($dados=mysqli_fetch_assoc($resultado)){
-       $id=$_POST["id"];
-       $nome=$_POST["nome"];
-       $email=$_POST["email"];
-       $senha=$_POST["senha"];
-       $bairro=$_POST["bairro"];
-       $rua=$_POST["rua"];
-       $numero=$_POST["numero"];
-       $telefone=$_POST["telefone"];
+       $id=$_POST["id_cli"];
+       $nome=$_POST["nome_cli"];
+       $email=$_POST["email_cli"];
+       $senha=$_POST["senha_cli"];
+       $cep=$_POST["cep_cli"];
+       $cidade=$_POST["cidade_cli"];
+       $bairro=$_POST["bairro_cli"];        
+       $rua=$_POST["rua_cli"];
+       $numero=$_POST["numero_cli"];
+       $complemento=$_POST["complemento_cli"];
+       $telefone=$_POST["telefone_cli"];
 
        echo "Id: $id <br>";
        echo "Nome: $nome <br>";
        echo "Email: $email<br>";
        echo "Senha: $senha <br>";
        echo "Bairro: $bairro <br>";
+       echo "CEP: $cep <br>";
+       echo "Cidade: $cidade <br>";
        echo "Rua: $rua <br>";
        echo "Número: $numero <br>";
+       echo "Complemento: $complemento <br>";
        echo "Telefone: $telefone <br>";
 	   
 	   echo "<a href='frm_altera_cli.php?id=$id'>Editar </a>";
