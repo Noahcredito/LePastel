@@ -6,6 +6,10 @@ body{
     text-align: center;
 }
 
+label {
+    display: block;
+}
+
 .container{
     width:80%;
     height:100%;
@@ -34,7 +38,7 @@ input[type="text"], input[type="password"] {
 }
 
 .btn {
-    margin: auto;
+    margin-bottom: 10px;
     background-color: #8080FF; /* Cor de fundo */
     color: #fff; /* Cor do texto */
     border: none; /* Remover borda */
