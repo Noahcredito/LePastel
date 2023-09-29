@@ -4,6 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {margin:0;}
+.dropright{
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .navbar{
   background-color: #000000;
   position: fixed;
@@ -71,6 +77,18 @@ label span:nth-child(3){
 
 <div class="navbar">
   <img src = "imagens/logo.png" width="200px" height="200px">
+
+  <div class="btn-group dropright">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropright
+    </button>
+    <div class="dropdown-menu">
+      <a href="tela_salgados.php">PastéisSalgados</a>
+      <a href="tela_doces.php">PastéisDoces</a>
+      <a href="tela_bebidas.php">Bebidas</a>
+    </div>
+  </div>
+
   <div class="container">
     <input type="checkbox" id="checkbox-menu">
 

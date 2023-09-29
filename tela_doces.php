@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {margin:0;}
-.navbar{
+/*.navbar{
   background-color: #000000;
   position: fixed;
   top: 0;
@@ -64,12 +64,13 @@ label span:nth-child(3){
 #checkbox-menu:checked + label span:nth-child(3){
   transform: rotate(45deg);
   top: 8px;
-}
+}*/
 </style>
 </head>
-<body style="background-color:#FFE780">
+<body>
+<?php require 'barra_lateral.html' ?>
 
-<div class="navbar">
+<!--div class="navbar">
   <img src = "imagens/logo.png" width="200px" height="200px">
   <div class="container">
     <input type="checkbox" id="checkbox-menu">
@@ -78,15 +79,12 @@ label span:nth-child(3){
       <span></span>
       <span></span>
       <span></span>
-      <a href="tela_salgados.php">PastéisSalgados</a>
-      <a href="tela_doces.php">PastéisDoces</a>
-      <a href="tela_bebidas.php">Bebidas</a>
     </label>
   </div>
 
   <div class="imagem">
     <img src = "imagens/engrenagem.png" width="40px" height="40px">
   </div>
-</div>
+</div-->
 </body>
 </html>
