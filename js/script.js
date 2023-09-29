@@ -2,7 +2,8 @@ $(document).ready(function () {
 	$('#cep').blur(//quando o campo de cep perder o foco
 		function(){
 			if($('#cep').val().length==0) {//se nao tiver nada digitado 
-			   $('#alerta').modal('show'); //exibir a modal de nada digitado
+			   /*$('#alerta').modal('show');*/ //exibir a modal de nada digitado
+			   window.exibirAlerta();
 			   $("#cep").focus();
 			}
 			else{//se tiver um cep digitado

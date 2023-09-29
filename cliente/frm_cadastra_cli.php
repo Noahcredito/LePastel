@@ -18,7 +18,6 @@
     <title>Cadastro de Cliente</title>
 </head>
 <body>
-<<<<<<< HEAD
 
 <div id="img">
 <img src="../imagens/logo1.png" width="200" heigth="200" />
@@ -28,113 +27,73 @@
 <div class="container">
 <br><br>
 
-=======
 <script>
     function alerta(){
         alert("Digite o cep")
     }
 </script>
 <h3> Cadastro de Cliente </h3>
->>>>>>> cc2c657ae805e72db866d0062d36197730a8c814
+
 <form action="cadastra_cli.php" method="POST">
 
     <div class="form-group">
-<<<<<<< HEAD
+
         <label for="nome"> Nome </label><br>
-        <input type="text"  name="nome" class="form-control" placeholder="Digite seu nome">
+        <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome">
     </div>
 
     <div class="form-group">
 	    <label for="email"> Email </label><br>
-        <input type="text" name="email" class="form-control" placeholder="Digite seu email">
+        <input type="text" id="email" name="email" class="form-control" placeholder="Digite seu email">
 	</div> 
 
     <div class="form-group">
 	    <label for="senha"> Senha </label><br>
-        <input type="text"  name="senha" class="form-control" placeholder="Digite sua senha">
-    </div>
-
-    <div class="form-group">
-	    <label for="bairro"> Bairro </label><br>
-        <input type="text"  name="bairro" class="form-control" placeholder="Digite seu bairro">
-    </div>
-
-    <div class="form-group">
-	    <label for="rua"> Rua </label><br>
-        <input type="text"  name="rua" class="form-control" placeholder="Digite sua rua">
-    </div>
-
-    <div class="form-group">
-	    <label for="numero"> Número </label><br>
-        <input type="text"  name="numero" class="form-control" placeholder="Digite seu número">
-    </div>
-
-    <div class="form-group">
-	    <label for="telefone"> Telefone </label><br>
-        <input type="text"  name="telefone" class="form-control" placeholder="Digite seu telefone">
-    </div><br><br>
-=======
-        <label for="nome"> Nome </label>
-        <input type="nome"  id="nome" name="nome" class="form-control" >
-	</div>
-	  
-    <div class="form-group">
-	    <label for="email"> Email </label>
-        <input type="email" id="email" name="email" class="form-control">
-	</div> 
-
-    <div class="form-group">
-	    <label for="senha"> Senha </label>
-        <input type="senha"  id="senha" name="senha" class="form-control">
+        <input type="text" id="senha" name="senha" class="form-control" placeholder="Digite sua senha">
     </div>
 
     <div class="form-group">
 	    <label for="cep"> CEP </label>
-        <input type="cep"  id="cep" name="cep" class="form-control">
+        <input type="text" id="cep" name="cep" class="form-control" placeholder="Digite seu CEP">
     </div>
 
     <div class="form-group">
 	    <label for="cidade"> Cidade </label>
-        <input type="cidade"  id="cidade" name="cidade" class="form-control">
+        <input type="text" id="cidade" name="cidade" class="form-control" placeholder="Digite sua cidade">
     </div>
 
     <div class="form-group">
 	    <label for="bairro"> Bairro </label>
-        <input type="bairro"  id="bairro" name="bairro" class="form-control">
+        <input type="text" id="bairro" name="bairro" class="form-control" placeholder="Digite seu bairro">
     </div>
 
     <div class="form-group">
 	    <label for="rua"> Rua </label>
-        <input type="rua"  id="rua" name="rua" class="form-control">
+        <input type="text" id="rua" name="rua" class="form-control" placeholder="Digite o nome da rua">
     </div>
 
     <div class="form-group">
 	    <label for="numero"> Número </label>
-        <input type="numero"  id="numero" name="numero" class="form-control">
+        <input type="text" id="numero" name="numero" class="form-control" placeholder="Digite o número do logradouro">
     </div>
 
     <div class="form-group">
 	    <label for="complemento"> Complemento </label>
-        <input type="complemento"  id="complemento" name="complemento" class="form-control">
+        <input type="text" id="complemento" name="complemento" class="form-control" placeholder="Digite um complemento">
     </div>
 
+
     <div class="form-group">
-	    <label for="telefone"> Telefone </label>
-        <input type="telefone"  id="telefone" name="telefone" class="form-control">
-    </div>
->>>>>>> cc2c657ae805e72db866d0062d36197730a8c814
+	    <label for="telefone"> Telefone </label><br>
+        <input type="text" id="telefone" name="telefone" class="form-control" placeholder="Digite seu telefone">
+    </div><br><br>
 
     <input type="submit" value="Cadastrar" class="btn btn-outline-secondary">
 
    </form>
-<<<<<<< HEAD
 
-   <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  
-=======
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
    <script src="../js/script.js" type="text/javascript"> </script>
->>>>>>> cc2c657ae805e72db866d0062d36197730a8c814
+
 </body>
 </html>
