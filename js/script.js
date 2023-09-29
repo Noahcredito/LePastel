@@ -3,7 +3,15 @@ $(document).ready(function () {
 		function(){
 			if($('#cep').val().length==0) {//se nao tiver nada digitado 
 			   /*$('#alerta').modal('show');*/ //exibir a modal de nada digitado
-			   window.exibirAlerta();
+			   let xhr = new XMLHttpRequest();
+  				xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      // A função exibirAlerta() foi carregada do outro documento e agora pode ser chamada.
+      /*window.alerta();*/
+    }
+  };
+  xhr.open("GET", "../cliente/frm_cadastra_cli.php", true);
+  xhr.send();
 			   $("#cep").focus();
 			}
 			else{//se tiver um cep digitado
