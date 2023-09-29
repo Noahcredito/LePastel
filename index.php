@@ -6,16 +6,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 <style>
-body {margin:0;}
-.navbar{
-  background-color: #000000;
-  position: fixed;
-  top: 0;
-  width: 200px;
-  height: 100%;
-}
 .box{
-  font-size: 23px;
+  font-size: 22px;
   text-align: center;
   background-color: #FFFFFF;
   width: 600px;
@@ -42,8 +34,26 @@ body {margin:0;}
   transform: translateY(-50%);
   left: 1020px;
 }
+
+/*body {margin:0;}
+.navbar{
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100%;
+}
+
+.imagem{
+  top: 0;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container{
-  height: 20%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,7 +75,7 @@ label span{
   height: 5px;
   width: 100%;
   border-radius: 30px;
-  background: #FFFFFF;
+  background: #FFCE08;
   transition: 0.25s ease-in-out;
 }
 label span:nth-child(1){
@@ -87,12 +97,12 @@ label span:nth-child(3){
 #checkbox-menu:checked + label span:nth-child(3){
   transform: rotate(45deg);
   top: 8px;
-}
+}*/
 </style>
 </head>
-<body style="background-color:#FFE780">
-
-<div class="navbar">
+<body>
+<?php require 'barra_lateral.html'?>
+<!-- div class="navbar">
   <img src = "imagens/logo.png" width="200px" height="200px">
   <div class="container">
     <input type="checkbox" id="checkbox-menu">
@@ -103,7 +113,12 @@ label span:nth-child(3){
       <span></span>
     </label>
   </div>
-</div>
+
+  <div class="imagem">
+    <img src = "imagens/engrenagem.png" width="40px" height="40px">
+  </div>
+
+</div-->
 
 <div class="box">
     <p> SOBRE NÓS </p>
