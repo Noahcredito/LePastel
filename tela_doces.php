@@ -4,6 +4,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {margin:0;}
+.imagem1{
+  position: absolute;
+  top: 5%;
+  left: 330px;
+}
+.imagem2{
+  position: absolute;
+  top: 5%;
+  left: 630px;
+}
+.imagem3{
+  position: absolute;
+  top: 5%;
+  left: 930px;
+}
+.imagem4{
+  position: absolute;
+  top: 5%;
+  left: 1230px;
+}
+.imagem5{
+  position: absolute;
+  top: 50%;
+  left: 330px;
+}
 /*.navbar{
   background-color: #000000;
   position: fixed;
@@ -86,5 +111,25 @@ label span:nth-child(3){
     <img src = "imagens/engrenagem.png" width="40px" height="40px">
   </div>
 </div-->
+
+<div class="imagem1">
+    <img src = "imagens/doce_de_leite.png" width="250px" height="250px">
+  </div>
+
+  <div class="imagem2">
+    <img src = "imagens/chocolate.png" width="250px" height="250px">
+  </div>
+
+  <div class="imagem3">
+    <img src = "imagens/romeu_e_julieta.png" width="250px" height="250px">
+  </div>
+  
+  <div class="imagem4">
+    <img src = "imagens/shot.png" width="250px" height="250px">
+  </div>
+
+  <div class="imagem5">
+    <img src = "imagens/chocobis.png" width="250px" height="250px">
+  </div>
 </body>
 </html>

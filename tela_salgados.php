@@ -91,23 +91,29 @@ body {margin:0;}
 }
 .imagem18{
   position: absolute;
-  top: 230%;
-  left: 330px;
+  top: 185%;
+  left: 630px;
 }
 .imagem19{
   position: absolute;
-  top: 230%;
-  left: 630px;
+  top: 185%;
+  left: 930px;
 }
 .imagem20{
   position: absolute;
-  top: 230%;
-  left: 930px;
+  top: 185%;
+  left: 1230px;
 }
 .imagem21{
   position: absolute;
   top: 230%;
-  left: 1230px;
+  left: 330px;
+}
+.texto{
+  position: absolute;
+  top: 270%;
+  left: 330px;
+  font-family: Alice;
 }
 .imagem22{
   position: absolute;
@@ -306,8 +312,11 @@ label span:nth-child(3){
     <img src = "imagens/file_ao_alho_catupiry.png" width="250px" height="250px">
   </div>
 
+  <div class="texto">
+    <h2>VEGETARIANOS</h2>
+  </div>
+
   <div class="imagem22">
-    <h4>VEGETARIANOS</h4>
     <img src = "imagens/brocolis.png" width="250px" height="250px">
   </div>
 
@@ -328,7 +337,6 @@ label span:nth-child(3){
   </div>
 
   <div class="imagem27">
-    <img src = "imagens/4_queijos.png" width="250px" height="250px">
-  </div><br><br><br><br><br><br><br>
+    <img src = "imagens/4_queijos.png" width="250px" height="250px"></div><br><br><br><br><br><br><br>
 </body>
 </html>
