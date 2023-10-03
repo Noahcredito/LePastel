@@ -31,7 +31,7 @@
       $comandoSql="INSERT INTO tb_cliente
       (nome_cli, senha_cli, email_cli, cep_cli, cidade_cli, bairro_cli, rua_cli, numero_cli, complemento_cli, telefone_cli)
       VALUES
-      ('$nome', '$senha', '$email', '$bairro', '$cep', '$cidade', '$rua', '$numero', '$complemento', '$telefone');";
+      ('$nome', '$senha', '$email', '$cep', '$cidade', '$bairro', '$rua', '$numero', '$complemento', '$telefone');";
      // echo $comandoSql;
 
     /*4- executando o comando sql */
