@@ -15,7 +15,7 @@
 
 .conteiner{
   font-size: 22px;
-  text-align: justify;
+  /*text-align: justify;*/
   background-color: #FFFFFF;
   width: 80%;
   height: 85%;
@@ -29,27 +29,7 @@
 
 </style>
 
-<script>
-    // Função para fazer a solicitação AJAX
-    function listarClientes() {
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'listar_clientes.php', true);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var listaClientes = JSON.parse(xhr.responseText);
-                var listaClientesHTML = '<ul>';
-                listaClientes.forEach(function (cliente) {
-                    listaClientesHTML += '<li>' + cliente.nome + '</li>';
-                });
-                listaClientesHTML += '</ul>';
-                document.getElementById('lista-clientes').innerHTML = listaClientesHTML;
-            }
-        };
-        xhr.send();
-    }
-
-
-</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Tela de Sorteio</title>
 </head>
@@ -63,40 +43,35 @@ echo "<div class='conteiner'>";
     /*espaço pro select/combo box*/
     echo lista_cli_select()."<br><br>";
     /*espaço para mostrar usuários da tb_cli_sort*/
-    
-    // Consulta SQL para listar os clientes
-$query = "SELECT * FROM tb_cliente";
-$resultado = mysqli_query($con, $query);
 
-// Verifique se a consulta teve sucesso
-if ($resultado) {
-    $clientes = array();
+    echo '<div id="dados">';
 
-    // Transforme os resultados em um array associativo
-    while ($row = mysqli_fetch_assoc($resultado)) {
-        $clientes[] = $row;
-    }
-
-    // Converta o array em formato JSON e envie para o cliente
-    echo json_encode($clientes);    
-} else {
-    // Se a consulta falhou, retorne um JSON vazio ou uma mensagem de erro, conforme necessário
-    echo json_encode(array('mensagem' => 'Erro ao listar clientes'));
-}
-
-// Feche a conexão com o banco de dados
-mysqli_close($con);
-
-
-$resultado= json_decode(file_get_contents($clientes));
-$dadosRetorno=$resultado->id_cli.",".$resultado->nome_cli.",".$resultado->email_cli.",".$resultado->cidade_cli.",".$resultado->bairro_cli.",".$resultado->rua_cli.",
-".$resultado->numero_cli.",".$resultado->telefone_cli;
-
+    echo '</div>'
 
     /*corfirmação se o usuário ainda não foi cadastrado*/
 ?>
 
+<script>
+        $(document).ready(function() {
+            // Função para buscar os dados do banco de dados
+            function atualizarDados() {
+                $.ajax({
+                    url: 'buscar_dados.php', // O arquivo PHP que buscará os dados no banco
+                    method: 'GET',
+                    success: function(response) {
+                        $('#dados').html(response); // Atualiza o conteúdo da div com os dados retornados
+                    }
+                });
+            }
 
+            // Atualiza os dados automaticamente a cada 5 segundos
+            setInterval(atualizarDados, 1000); // 5000 milissegundos = 5 segundos
+        });
+    </script>
+
+<div id="dados">
+
+</div>
 
 
 </div>
