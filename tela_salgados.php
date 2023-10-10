@@ -11,7 +11,7 @@ body {margin:0;}
   
 }
 .imagem1 img{
-  border-radius: 10%;
+  border-radius: 5%;
 }
 .imagem2{
   position: absolute;
