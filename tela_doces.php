@@ -9,25 +9,40 @@ body {margin:0;}
   top: 5%;
   left: 330px;
 }
+.imagem1 img{
+  border-radius: 10%;
+}
 .imagem2{
   position: absolute;
   top: 5%;
   left: 630px;
+}
+.imagem2 img{
+  border-radius: 10%;
 }
 .imagem3{
   position: absolute;
   top: 5%;
   left: 930px;
 }
+.imagem3 img{
+  border-radius: 10%;
+}
 .imagem4{
   position: absolute;
   top: 5%;
   left: 1230px;
 }
+.imagem4 img{
+  border-radius: 10%;
+}
 .imagem5{
   position: absolute;
   top: 50%;
   left: 330px;
+}
+.imagem5 img{
+  border-radius: 10%;
 }
 /*.navbar{
   background-color: #000000;

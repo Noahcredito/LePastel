@@ -8,106 +8,170 @@ body {margin:0;}
   position: absolute;
   top: 5%;
   left: 330px;
+  
+}
+.imagem1 img{
+  border-radius: 10%;
 }
 .imagem2{
   position: absolute;
   top: 5%;
   left: 630px;
 }
+.imagem2 img{
+  border-radius: 10%;
+}
 .imagem3{
   position: absolute;
   top: 5%;
   left: 930px;
+}
+.imagem3 img{
+  border-radius: 10%;
 }
 .imagem4{
   position: absolute;
   top: 5%;
   left: 1230px;
 }
+.imagem4 img{
+  border-radius: 10%;
+}
 .imagem5{
   position: absolute;
   top: 50%;
   left: 330px;
+}
+.imagem5 img{
+  border-radius: 10%;
 }
 .imagem6{
   position: absolute;
   top: 50%;
   left: 630px;
 }
+.imagem6 img{
+  border-radius: 10%;
+}
 .imagem7{
   position: absolute;
   top: 50%;
   left: 930px;
+}
+.imagem7 img{
+  border-radius: 10%;
 }
 .imagem8{
   position: absolute;
   top: 50%;
   left: 1230px;
 }
+.imagem8 img{
+  border-radius: 10%;
+}
 .imagem9{
   position: absolute;
   top: 95%;
   left: 330px;
+}
+.imagem9 img{
+  border-radius: 10%;
 }
 .imagem10{
   position: absolute;
   top: 95%;
   left: 630px;
 }
+.imagem10 img{
+  border-radius: 10%;
+}
 .imagem11{
   position: absolute;
   top: 95%;
   left: 930px;
+}
+.imagem11 img{
+  border-radius: 10%;
 }
 .imagem12{
   position: absolute;
   top: 95%;
   left: 1230px;
 }
+.imagem12 img{
+  border-radius: 10%;
+}
 .imagem13{
   position: absolute;
   top: 140%;
   left: 330px;
+}
+.imagem13 img{
+  border-radius: 10%;
 }
 .imagem14{
   position: absolute;
   top: 140%;
   left: 630px;
 }
+.imagem14 img{
+  border-radius: 10%;
+}
 .imagem15{
   position: absolute;
   top: 140%;
   left: 930px;
+}
+.imagem15 img{
+  border-radius: 10%;
 }
 .imagem16{
   position: absolute;
   top: 140%;
   left: 1230px;
 }
+.imagem16 img{
+  border-radius: 10%;
+}
 .imagem17{
   position: absolute;
   top: 185%;
   left: 330px;
+}
+.imagem17 img{
+  border-radius: 10%;
 }
 .imagem18{
   position: absolute;
   top: 185%;
   left: 630px;
 }
+.imagem18 img{
+  border-radius: 10%;
+}
 .imagem19{
   position: absolute;
   top: 185%;
   left: 930px;
+}
+.imagem19 img{
+  border-radius: 10%;
 }
 .imagem20{
   position: absolute;
   top: 185%;
   left: 1230px;
 }
+.imagem20 img{
+  border-radius: 10%;
+}
 .imagem21{
   position: absolute;
   top: 230%;
   left: 330px;
+}
+.imagem21 img{
+  border-radius: 10%;
 }
 .texto{
   position: absolute;
@@ -120,30 +184,48 @@ body {margin:0;}
   top: 275%;
   left: 330px;
 }
+.imagem22 img{
+  border-radius: 10%;
+}
 .imagem23{
   position: absolute;
   top: 275%;
   left: 630px;
+}
+.imagem23 img{
+  border-radius: 10%;
 }
 .imagem24{
   position: absolute;
   top: 275%;
   left: 930px;
 }
+.imagem24 img{
+  border-radius: 10%;
+}
 .imagem25{
   position: absolute;
   top: 275%;
   left: 1230px;
+}
+.imagem25 img{
+  border-radius: 10%;
 }
 .imagem26{
   position: absolute;
   top: 320%;
   left: 330px;
 }
+.imagem26 img{
+  border-radius: 10%;
+}
 .imagem27{
   position: absolute;
   top: 320%;
   left: 630px;
+}
+.imagem27 img{
+  border-radius: 10%;
 }
 /*.navbar{
   background-color: #000000;
