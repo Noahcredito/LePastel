@@ -11,7 +11,7 @@ if ($result) {
     // Monta a resposta em formato HTML
     $output = '<ul>';
     while ($row = mysqli_fetch_assoc($result)) {
-        $output .= '<li>' . $row['nome_cli'] . ': ' . $row['email_cli'] . ': ' . $row['cidade_cli'] . '</li>';
+        $output .= '<li>' . $row['nome_cli'] . ' | ' . $row['email_cli'] . ' | ' . $row['cidade_cli'] . '</li>';
     }
     $output .= '</ul>';
     

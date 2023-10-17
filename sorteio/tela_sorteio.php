@@ -27,6 +27,11 @@
   font-family: Alice;
 }
 
+#btnCadastro{
+    display: flex;
+    align-items: right;
+}
+
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -41,7 +46,25 @@
 
 echo "<div class='conteiner'>";
     /*espaço pro select/combo box*/
-    echo '<form action="processa_cadastro.php" method="post">'.lista_cli_select().'<input type="submit" value="Cadastrar">'.
+    echo '<form action="processa_cadastro.php" method="post">';  
+
+    /*2- criando o comando sql para consulta dos registros */
+    $comandoSql= "select id_cli, nome_cli from tb_cliente";
+
+    /*3- executando o comando sql */
+    $resultado=mysqli_query($con,$comandoSql);
+
+    //criando o objeto select
+    
+    echo "<select name='cli' id='cli' class='form-control'>";
+    /*4- pegando os dados da consulta criada e exibindo */
+    while($dados=mysqli_fetch_assoc($resultado)){
+      $id= $dados["id_cli"];
+      $nome=$dados["nome_cli"];
+      echo "<option value=$id> $nome </option>";
+      
+   }
+   echo "</select>".'<input type="submit" id="btnCadastro" value="Cadastrar">'.
     '</form>';
     echo "<br><br>";
 
