@@ -12,7 +12,7 @@
 
      //criando o objeto select
      
-     echo "<select name='cli' class='form-control'>";
+     echo "<select name='cli' id='cli' class='form-control'>";
      /*4- pegando os dados da consulta criada e exibindo */
      while($dados=mysqli_fetch_assoc($resultado)){
        $id= $dados["id_cli"];

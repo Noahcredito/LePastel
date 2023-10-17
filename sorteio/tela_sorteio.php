@@ -27,10 +27,6 @@
   font-family: Alice;
 }
 
-#btnCadastra{
-    align-content: center;
-}
-
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -45,7 +41,8 @@
 
 echo "<div class='conteiner'>";
     /*espaço pro select/combo box*/
-    echo '<form action="processa_cadastro.php" method="post">'.lista_cli_select().'<input type="submit" value="Cadastrar">';
+    echo '<form action="processa_cadastro.php" method="post">'.lista_cli_select().'<input type="submit" value="Cadastrar">'.
+    '</form>';
     echo "<br><br>";
 
     /*espaço para mostrar usuários da tb_cli_sort*/
@@ -76,9 +73,7 @@ echo "<div class='conteiner'>";
 
     </script>
 
-<div id="dados">
 
-</div>
 
 
 </div>
