@@ -2,7 +2,7 @@
   function lista_cli_select(){
    /*1- realizando a conexao com o banco de dados (local, usuario,senha,nomeBanco)*/
      //$con=mysqli_connect("localhost","root","","bd_projeto");
-     require "conexao.php";  
+     require "../conexao.php";  
 
      /*2- criando o comando sql para consulta dos registros */
      $comandoSql= "select id_cli, nome_cli from tb_cliente";
@@ -29,7 +29,7 @@
 function lista_cli_select_id($id_cli){
     /*1- realizando a conexao com o banco de dados (local, usuario,senha,nomeBanco)*/
       //$con=mysqli_connect("localhost","root","","bd_projeto");
-      require "conexao.php";  
+      require "../conexao.php";  
  
       /*2- criando o comando sql para consulta dos registros */
       $comandoSql= "select id_cli, nome_cli from tb_cli";

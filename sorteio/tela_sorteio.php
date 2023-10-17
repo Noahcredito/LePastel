@@ -15,7 +15,7 @@
 
 .conteiner{
   font-size: 22px;
-  /*text-align: justify;*/
+  text-align: justify;
   background-color: #FFFFFF;
   width: 80%;
   height: 85%;
@@ -27,6 +27,10 @@
   font-family: Alice;
 }
 
+#btnCadastra{
+    align-content: center;
+}
+
 </style>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -35,13 +39,15 @@
 </head>
 <body>
 
-<?php require 'cliente/lista_cli_select.php';
-    require 'barra_lateral.html';
-    require 'conexao.php';
+<?php require '../cliente/lista_cli_select.php';
+    require '../barra_lateral.html';
+    require '../conexao.php';
 
 echo "<div class='conteiner'>";
     /*espaço pro select/combo box*/
-    echo lista_cli_select()."<br><br>";
+    echo '<form action="processa_cadastro.php" method="post">'.lista_cli_select().'<input type="submit" value="Cadastrar">';
+    echo "<br><br>";
+
     /*espaço para mostrar usuários da tb_cli_sort*/
 
     echo '<div id="dados">';
@@ -67,6 +73,7 @@ echo "<div class='conteiner'>";
             // Atualiza os dados automaticamente a cada 5 segundos
             setInterval(atualizarDados, 1000); // 5000 milissegundos = 5 segundos
         });
+
     </script>
 
 <div id="dados">

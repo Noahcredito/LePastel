@@ -1,6 +1,6 @@
 <?php
 // Inclua o arquivo de conexão com o banco de dados
-require_once 'conexao.php';
+require_once '../conexao.php';
 
 // Consulta ao banco de dados (substitua pelo seu código)
 $sql = "SELECT * FROM tb_cli_sort cs
