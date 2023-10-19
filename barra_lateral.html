@@ -2,30 +2,34 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <style>
 body {margin:0;}
 .navbar{
   background-color: #000000;
   position: fixed;
   top: 0;
-  width: 200px;
+  width: 13.5%;
   height: 100%;
 }
 
 .imagem{
-  height: 35%;
+  width: 100%;
+  height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .container{
+  width: 50%;
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#checkbox-menu{
+
+/*#checkbox-menu{
   position: absolute;
   opacity: 0;
 }
@@ -64,29 +68,45 @@ label span:nth-child(3){
 #checkbox-menu:checked + label span:nth-child(3){
   transform: rotate(45deg);
   top: 8px;
-}
+}*/
 </style>
 </head>
 <body style="background-color:#FFE780">
 
 <div class="navbar">
-  <img src = "imagens/logo.png" width="200px" height="200px">
+  <img src = "imagens/logo.png" width="100%" height="200px">
   <div class="container">
-    <input type="checkbox" id="checkbox-menu">
+    <!--input type="checkbox" id="checkbox-menu"-->
 
-    <label for="checkbox-menu">
+    <div class="btn-group dropright">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Cardápio
+      </button>
+      <div class="dropdown-menu">
+        <a href="tela_salgados.php">Pastéis Salgados</a>
+        <a href="tela_doces.php">Pastéis Doces</a><br>
+        <a href="tela_bebidas.php">Bebidas</a>
+      </div>
+    </div>
+
+    <!--label for="checkbox-menu">
       <span></span>
       <span></span>
       <span></span>
-      <a href="tela_salgados.php">PastéisSalgados</a>
-      <a href="tela_doces.php">PastéisDoces</a>
+      <a href="tela_salgados.php">Pastéis Salgados</a>
+      <a href="tela_doces.php">Pastéis Doces</a>
       <a href="tela_bebidas.php">Bebidas</a>
-    </label>
+    </label-->
+
   </div>
 
   <div class="imagem">
-    <img src = "imagens/engrenagem.png" width="40px" height="40px">
+    <img src = "imagens/engrenagem.png" width="22%" height="18%">
   </div>
 </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </html>

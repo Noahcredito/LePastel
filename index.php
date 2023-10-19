@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 <style>
 .box{
-  font-size: 22px;
+  font-size: 20.9px;
   text-align: center;
   background-color: #FFFFFF;
   width: 600px;
@@ -33,6 +33,13 @@
   top: 65.5%;
   transform: translateY(-50%);
   left: 1020px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.item{
+  flex: 1 1 100px;
 }
 
 /*body {margin:0;}
@@ -119,7 +126,8 @@ label span:nth-child(3){
   </div>
 
 </div-->
-
+<div class="container">
+<div class="item">
 <div class="box">
     <p> SOBRE NÓS </p>
     <p>A Le Pastel nasceu do sonho da sua fundadora de empreender e compartilhar suas delícias com todos que amam uma boa comida. No ano de 2021 o projeto foi tirado do papel e finalmente o sonho teve início.</p>
@@ -136,5 +144,7 @@ label span:nth-child(3){
   <div class="imagem2">
     <img src="imagens/foto2_inicio.jpeg" width="550px" height="300px">
   </div>
+</div>
+</div>
 </body>
 </html>
