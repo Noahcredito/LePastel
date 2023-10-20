@@ -14,7 +14,7 @@
   height: 550px;
   border-radius: 50px;
   padding: 0.1px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   left: 250px;
@@ -22,25 +22,36 @@
 }
 .imagem1{
   padding: 0.1px;
-  position: absolute;
+  position: fixed;
   top: 34.5%;
   transform: translateY(-50%);
-  left: 880px;
+  left: 55%;
 }
 .imagem2{
   padding: 0.1px;
-  position: absolute;
+  position: fixed;
   top: 65.5%;
   transform: translateY(-50%);
-  left: 1020px;
+  left: 63.75%;
 }
-.container{
-  display: flex;
-  flex-wrap: wrap;
+/*@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+
 }
-.item{
-  flex: 1 1 100px;
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+
 }
+@media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+    
+}*/
 
 /*body {margin:0;}
 .navbar{
