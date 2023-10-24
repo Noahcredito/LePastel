@@ -15,22 +15,22 @@
   height: 550px;
   border-radius: 50px;
   padding: 0.1px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 250px;
+  left: 17%;
   font-family: Alice;
 }
 .imagem1{
   padding: 0.1px;
-  position: fixed;
+  position: absolute;
   top: 34.5%;
   transform: translateY(-50%);
   left: 55%;
 }
 .imagem2{
   padding: 0.1px;
-  position: fixed;
+  position: absolute;
   top: 65.5%;
   transform: translateY(-50%);
   left: 63.75%;
