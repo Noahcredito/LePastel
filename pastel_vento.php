@@ -24,7 +24,7 @@ body {margin:0;}
   font-size: 25px;
   top: 50%;
   transform: translateY(-50%);
-  left: 55%;
+  left: 65%;
   text-align: center;
 }
 </style>
@@ -37,8 +37,8 @@ body {margin:0;}
 
   <div class="texto">
     <p>Pastel de Vento<br>
-    G R$7,00<br>
-    P R$5,00<br><br>
+    P R$5,00<br>
+    G R$7,00<br><br>
     Ingredientes: Massa sem recheio</p>
   </div>
 </body>

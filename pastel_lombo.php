@@ -5,42 +5,42 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <style>
 body {margin:0;}
-.navbar{
-  background-color: #000000;
-  position: fixed;
-  top: 0;
-  width: 12,50%;
-  height: 100%;
+.imagem-pastel{
+  padding: 0.1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
 }
 
-.imagem{
-  height: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.imagem-pastel img{
+  border-radius: 5%;
+  text-align: center;
+}
+
+.texto{
+  position: absolute;
+  font-family: Alice;
+  font-size: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 65%;
+  text-align: center;
 }
 </style>
 </head>
 <body style="background-color:#FFE780">
-
-<div class="navbar">
-  <img src = "imagens/logo.png" width="100%" height="200px">
-
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      LE PASTEL
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="tela_salgados.php">Pastéis Salgados</a>
-      <a class="dropdown-item" href="tela_doces.php">Pastéis Doces</a>
-      <a class="dropdown-item" href="tela_bebidas.php">Bebidas</a>
-    </div>
+<?php require 'barra_lateral.html'?>
+  <div class="imagem-pastel">
+    <img src = "imagens/lombo.png" width="50%" height="50%">
   </div>
 
-  <div class="imagem">
-    <img src = "imagens/engrenagem.png" width="40px" height="40px">
+  <div class="texto">
+    <p>Pastel de Lombo Canadense<br>
+    P R$8,00<br>
+    G R$11,00<br><br>
+    Ingredientes: Lombo Canadense</p>
   </div>
-</div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

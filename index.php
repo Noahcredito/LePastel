@@ -21,19 +21,26 @@
   left: 17%;
   font-family: Alice;
 }
+
+@media screen and (max-width:600px){
+  .box{
+    width: 50%;
+  }
+}
+
 .imagem1{
   padding: 0.1px;
   position: absolute;
   top: 34.5%;
   transform: translateY(-50%);
-  left: 55%;
+  left: 65%;
 }
 .imagem2{
   padding: 0.1px;
   position: absolute;
-  top: 65.5%;
+  top: 75%;
   transform: translateY(-50%);
-  left: 63.75%;
+  left: 75%;
 }
 
 /*body {margin:0;}
