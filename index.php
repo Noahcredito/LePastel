@@ -8,125 +8,138 @@
 <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 <style>
 .box{
-  font-size: 20.9px;
+  font-size: 18.7px;
   text-align: center;
   background-color: #FFFFFF;
-  width: 600px;
-  height: 550px;
+  width: 550px;
+  height: 500px;
   border-radius: 50px;
   padding: 0.1px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 17%;
+  left: 18%;
   font-family: Alice;
-}
-
-@media screen and (max-width:600px){
-  .box{
-    width: 50%;
-  }
 }
 
 .imagem1{
   padding: 0.1px;
   position: absolute;
-  top: 34.5%;
+  top: 38%;
   transform: translateY(-50%);
-  left: 65%;
+  left: 61%;
 }
+
 .imagem2{
   padding: 0.1px;
   position: absolute;
-  top: 75%;
+  top: 64%;
   transform: translateY(-50%);
-  left: 75%;
+  left: 65%;
 }
 
-/*body {margin:0;}
-.navbar{
-  background-color: #000000;
-  position: fixed;
-  top: 0;
-  width: 200px;
-  height: 100%;
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .box{
+    font-size: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    padding: 0.1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    font-family: Alice;
+  }
+
+  .imagem1{
+    padding: 0.1px;
+    position: absolute;
+    top: 34.5%;
+    transform: translateY(-50%);
+    left: 65%;
+  }
+
+  .imagem2{
+    padding: 0.1px;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    left: 75%;
+  }
 }
 
-.imagem{
-  top: 0;
-  height: 35%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .box{
+    font-size: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    padding: 0.1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    font-family: Alice;
+  }
+
+  .imagem1{
+    padding: 0.1px;
+    position: absolute;
+    top: 34.5%;
+    transform: translateY(-50%);
+    left: 65%;
+  }
+
+  .imagem2{
+    padding: 0.1px;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    left: 75%;
+  }
 }
 
-.container{
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  .box{
+    font-size: 10px;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    padding: 0.1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    font-family: Alice;
+  }
+
+  .imagem1{
+    padding: 0.1px;
+    position: absolute;
+    top: 34.5%;
+    transform: translateY(-50%);
+    left: 65%;
+  }
+
+  .imagem2{
+    padding: 0.1px;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    left: 75%;
+  }
 }
-#checkbox-menu{
-  position: absolute;
-  opacity: 0;
-}
-label{
-  cursor: pointer;
-  position: relative;
-  display: block;
-  height: 22px;
-  width: 50px;
-}
-label span{
-  position: absolute;
-  display: block;
-  height: 5px;
-  width: 100%;
-  border-radius: 30px;
-  background: #FFCE08;
-  transition: 0.25s ease-in-out;
-}
-label span:nth-child(1){
-  top: 0;
-}
-label span:nth-child(2){
-  top: 9px;
-}
-label span:nth-child(3){
-  top: 18px;
-}
-#checkbox-menu:checked + label span:nth-child(1){
-  transform: rotate(-45deg);
-  top: 8px;
-}
-#checkbox-menu:checked + label span:nth-child(2){
-  opacity: 0;
-}
-#checkbox-menu:checked + label span:nth-child(3){
-  transform: rotate(45deg);
-  top: 8px;
-}*/
 </style>
 </head>
 <body>
 <?php require 'barra_lateral.html'?>
-<!-- div class="navbar">
-  <img src = "imagens/logo.png" width="200px" height="200px">
-  <div class="container">
-    <input type="checkbox" id="checkbox-menu">
-
-    <label for="checkbox-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-  </div>
-
-  <div class="imagem">
-    <img src = "imagens/engrenagem.png" width="40px" height="40px">
-  </div>
-
-</div-->
 <div class="container">
 <div class="item">
 <div class="box">
@@ -139,11 +152,11 @@ label span:nth-child(3){
   </div>
 
   <div class="imagem1">
-    <img src="imagens/foto1_inicio.jpeg" width="550px" height="295px">
+    <img src="imagens/foto1_inicio.jpeg" width="450px" height="220px">
   </div>
 
   <div class="imagem2">
-    <img src="imagens/foto2_inicio.jpeg" width="550px" height="300px">
+    <img src="imagens/foto2_inicio.jpeg" width="450px" height="220px">
   </div>
 </div>
 </div>

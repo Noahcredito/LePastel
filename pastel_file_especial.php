@@ -32,7 +32,7 @@ body {margin:0;}
 <body style="background-color:#FFE780">
 <?php require 'barra_lateral.html'?>
   <div class="imagem-pastel">
-    <img src = "imagens/file-especial.png" width="50%" height="50%">
+    <img src = "imagens/file_especial.png" width="50%" height="50%">
   </div>
 
   <div class="texto">

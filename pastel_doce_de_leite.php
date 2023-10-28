@@ -32,14 +32,14 @@ body {margin:0;}
 <body style="background-color:#FFE780">
 <?php require 'barra_lateral.html'?>
   <div class="imagem-pastel">
-    <img src = "imagens/palmito_cremoso.png" width="50%" height="50%">
+    <img src = "imagens/doce_de_leite.png" width="50%" height="50%">
   </div>
 
   <div class="texto">
-    <p>Pastel de Palmito Cremoso<br>
-    P R$9,00<br>
-    G R$12,00<br><br>
-    Ingredientes: Creme de Palmito, Cebola e Alho frito</p>
+    <p>Pastel de Doce de Leite<br>
+    P R$8,00<br>
+    G R$11,00<br><br>
+    Ingredientes: Doce de leite e Castanha</p>
   </div>
 </body>
 
