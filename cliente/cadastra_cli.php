@@ -9,6 +9,7 @@
 <body>
 
 <?php
+header("refresh:2;url=frm_cadastra_cli.html");
     /*1- realizando a conexao com o banco de dados (local, usuario,senha,nomeBanco)*/
 
         require "../conexao.php";
