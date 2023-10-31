@@ -6,27 +6,31 @@ if ($con->connect_error) {
     die("Conexão com o banco de dados falhou: " . $con->connect_error);
 }
 
-// Consulta para obter todos os IDs da tabela
-$sql = "SELECT cod_cli FROM tb_sort_cli";
+// Consulta SQL para selecionar um ID aleatório da tabela "tb_cli_sort"
+$sql = "SELECT cod_cli FROM tb_cli_sort ORDER BY RAND() LIMIT 1";
 $result = $con->query($sql);
 
+if ($result === false) {
+    die("Erro na consulta SQL: " . $con->error);
+}
+
 if ($result->num_rows > 0) {
-    // Armazena os IDs em um array
-    $ids = array();
-    while ($row = $result->fetch_assoc()) {
-        $ids[] = $row['cod_cli'];
+    $linha = $result->fetch_assoc();
+    $idSorteado = $linha['cod_cli'];
+
+    // Consulta SQL para buscar o nome do cliente com base no ID sorteado
+    $sqlNomeCliente = "SELECT nome_cli FROM tb_cliente WHERE id_cli = $idSorteado";
+    $resultNomeCliente = $con->query($sqlNomeCliente);
+
+    if ($resultNomeCliente->num_rows > 0) {
+        $linhaNomeCliente = $resultNomeCliente->fetch_assoc();
+        $nomeClienteSorteado = $linhaNomeCliente['nome_cli'];
+        $con->close();
+        echo $nomeClienteSorteado;
+    } else {
+        echo "Nome de cliente não encontrado.";
     }
-
-    // Sortear um ID aleatório
-    $id_sorteado = $ids[array_rand($ids)];
-
-    // Fechar a conexão
-    $conn->close();
-
-    // Retornar o ID sorteado
-    echo $id_sorteado;
 } else {
     echo "Nenhum registro encontrado na tabela.";
 }
-
 ?>

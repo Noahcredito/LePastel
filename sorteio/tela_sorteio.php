@@ -13,24 +13,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 
     <style>
-        .conteiner {
-            font-size: 22px;
-            text-align: justify;
-            background-color: #FFFFFF;
-            width: 80%;
-            height: 85%;
-            border-radius: 50px;
-            padding: 40px;
-            position: absolute;
-            top: 30px;
-            left: 250px;
-            font-family: Alice;
-        }
+body {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    background-color: #FFE780;
+    overflow: hidden;
+}
 
-        #btnCadastro {
-            display: flex;
-            align-items: right;
-        }
+
+
+.conteiner {
+    font-size: 22px;
+    text-align: justify;
+    background-color: #FFFFFF;
+    width: 100%; /* Alterado para ocupar toda a largura disponível */
+    max-width: none; /* Removido o tamanho máximo */
+    padding: 5%;
+    font-family: Alice;
+    margin-left: 19%; /* Espaço para a barra lateral */
+    margin-top: 3%; /* Margem superior */
+    margin-right: 3%; /* Margem direita */
+    border-radius: 5%;
+}
+
+#btnCadastro {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Adicione uma media query para ajustar o tamanho em telas menores, se necessário */
+@media (max-width: 768px) {
+    .conteiner {
+        font-size: 18px; /* Ajuste o tamanho da fonte em telas menores */
+    }
+}
+
     </style>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -46,8 +65,8 @@
 
     echo "<div class='conteiner'>";
     /*espaço pro select/combo box*/
-    
-       
+
+
 
     echo '<form action="processa_cadastro.php" method="post">';
 
@@ -74,7 +93,11 @@
 
     echo '<button id="btnSorteio">Sortear</button>';
 
+    echo '<button id="btnLimpar">Limpar</button>';
+
     echo "<br><br>";
+
+    echo '<p>Sorteado: <span id="idSorteado"></span></p><br>';
 
     echo '<div id="dados">';
     // Verifica se a conexão foi bem-sucedida
@@ -91,7 +114,7 @@
     if (mysqli_num_rows($resultado) > 0) {
         while ($linha = mysqli_fetch_assoc($resultado)) {
             if (isset($linha['nome_cli'])) {
-                echo $linha['nome_cli'].'<br>';
+                echo $linha['nome_cli'] . '<br>';
             }
         }
     } else {
@@ -105,24 +128,46 @@
     ?>
 
     <script>
+
         document.getElementById('btnAtualizarDados').addEventListener('click', function() {
-            // Recarregua a página para buscar os dados atualizados do banco de dados
             location.reload();
         });
 
-        document.getElementById("btnSorteio").addEventListener("click", function () {
-            // Fazer uma solicitação para "sorteador.php"
+        document.getElementById('btnLimpar  ').addEventListener('click', function() {
+            location.reload();
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById("btnSorteio").addEventListener("click", function() {
+                // Fazer uma solicitação ao "sorteador.php"
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "sorteador.php", true);
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.getElementById("idSorteado").textContent = xhr.responseText;
+                    } else if (xhr.status !== 200) {
+                        alert("Erro ao sortear o cliente.");
+                    }
+                };
+                xhr.send();
+            });
+        });
+
+        document.getElementById('btnLimpar').addEventListener('click', function() {
+            // Fazer uma solicitação para o arquivo "limpar.php"
             var xhr = new XMLHttpRequest();
-            xhr.open("GET", "sorteador.php", true);
-            xhr.onreadystatechange = function () {
+            xhr.open("GET", "limpar.php", true);
+            xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
-                    document.getElementById("idSorteado").textContent = xhr.responseText;
+                    alert(xhr.responseText); // Exibe a resposta do servidor em um alerta
                 } else if (xhr.status !== 200) {
-                    alert("Erro ao sortear o cliente.");
+                    alert("Erro ao apagar dados.");
                 }
             };
             xhr.send();
         });
+
     </script>
 
     </div>
