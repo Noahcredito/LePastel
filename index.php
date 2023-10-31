@@ -40,34 +40,34 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px){
   .box{
-    font-size: 10px;
+    font-size: 13.96px;
     text-align: center;
     background-color: #FFFFFF;
-    width: 200px;
-    height: 150px;
+    width: 400px;
+    height: 400px;
     border-radius: 50px;
     padding: 0.1px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
-    left: 20%;
+    left: 37%;
     font-family: Alice;
   }
 
   .imagem1{
     padding: 0.1px;
     position: absolute;
-    top: 34.5%;
+    top: 150%;
     transform: translateY(-50%);
-    left: 65%;
+    left: 25%;
   }
 
   .imagem2{
     padding: 0.1px;
     position: absolute;
-    top: 75%;
+    top: 150%;
     transform: translateY(-50%);
-    left: 75%;
+    left: 30%;
   }
 }
 
