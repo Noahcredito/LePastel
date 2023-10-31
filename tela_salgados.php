@@ -421,16 +421,16 @@ body {margin:0;}
   }
 }
 a:link {
-   color: black;
+  color: #000000;
 }
 a:visited {
-    color: black;
+  color: #000000;
 }
 a:hover {
-    color: black;
+  color: #000000;
 }
 a:active {
-    color: black;
+  color: #000000;
 }
 </style>
 </head>

@@ -30,7 +30,7 @@ body {margin:0;}
   justify-content: center;
 }
 
-#checkbox-menu{
+/*#checkbox-menu{
   position: absolute;
   opacity: 0;
 }
@@ -78,6 +78,49 @@ label span:nth-child(3){
 #checkbox-menu:checked + label span:nth-child(3){
   transform: rotate(45deg);
   top: 8px;
+}*/
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    font-size: 35px;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 7.5%;
+    z-index: 2;
+    color: #FFCE08;
+}
+
+#menu {
+    background-color: #FFFFFF;
+    color: #000000;
+    position: fixed;
+    left: -250px;
+    width: 150px;
+    height: 165px;
+    transition: left 0.3s;
+    z-index: 1;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    padding: 15px;
+}
+
+#menu ul li a {
+    color: #000000;
+}
+
+#menu-toggle:checked + #menu-icon + #menu {
+    left: 0;
 }
 </style>
 </head>
@@ -86,16 +129,38 @@ label span:nth-child(3){
 <div class="navbar">
   <img src = "imagens/logo.png" width="100%" height="200px">
   <div class="container">
-    <input type="checkbox" id="checkbox-menu">
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" id="menu-icon">&#9776;</label>
+    <div id="menu">
+        <ul>
+            <li><a href="tela_salgados.php">Pastéis Salgados</a></li>
+            <li><a href="tela_doces.php">Pastéis Doces</a></li>
+            <li><a href="tela_bebidas.php">Bebidas</a></li>
+        </ul>
+    </div>
+
+    <!--div class="btn-group dropright">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Cardápio
+      </button>
+      <div class="dropdown-menu">
+        <a href="tela_salgados.php">Pastéis Salgados</a>
+        <a href="tela_doces.php">Pastéis Doces</a><br>
+        <a href="tela_bebidas.php">Bebidas</a>
+      </div>
+    </div-->
+
+    <!--input type="checkbox" id="checkbox-menu">
 
     <label for="checkbox-menu">
       <span></span>
       <span></span>
       <span></span>
-      <!--a href="tela_salgados.php">Pastéis Salgados</a>
+      <a href="tela_salgados.php">Pastéis Salgados</a>
       <a href="tela_doces.php">Pastéis Doces</a>
-      <a href="tela_bebidas.php">Bebidas</a-->
-    </label>
+      <a href="tela_bebidas.php">Bebidas</a>
+    </label-->
   </div>
 
   <div class="imagem">

@@ -15,6 +15,7 @@ body {margin:0;}
 }
 
 .texto1{
+  color: #000000;
   position: absolute;
   font-family: Alice;
   font-size: 20px;
@@ -33,6 +34,7 @@ body {margin:0;}
 }
 
 .texto2{
+  color: #000000;
   position: absolute;
   font-family: Alice;
   font-size: 20px;
@@ -51,6 +53,7 @@ body {margin:0;}
 }
 
 .texto3{
+  color: #000000;
   position: absolute;
   font-family: Alice;
   font-size: 20px;
@@ -68,6 +71,7 @@ body {margin:0;}
 }
 
 .texto4{
+  color: #000000;
   position: absolute;
   font-family: Alice;
   font-size: 20px;
@@ -86,11 +90,25 @@ body {margin:0;}
 }
 
 .texto5{
+  color: #000000;
   position: absolute;
   font-family: Alice;
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+}
+
+a:link {
+  color: #000000;
+}
+a:visited {
+  color: #000000;
+}
+a:hover {
+  color: #000000;
+}
+a:active {
+  color: #000000;
 }
 </style>
 </head>
