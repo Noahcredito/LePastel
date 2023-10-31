@@ -12,7 +12,7 @@
   text-align: center;
   background-color: #FFFFFF;
   width: 550px;
-  height: 500px;
+  height: 550px;
   border-radius: 50px;
   padding: 0.1px;
   position: absolute;
@@ -136,6 +136,39 @@
     left: 75%;
   }
 }
+
+@media screen and (min-width: 1920px){
+  .box{
+    font-size: 23.7px;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 650px;
+    height: 650px;
+    border-radius: 50px;
+    padding: 0.1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    font-family: Alice;
+  }
+
+  .imagem1{
+    padding: 0.1px;
+    position: absolute;
+    top: 37%;
+    transform: translateY(-50%);
+    left: 59%;
+  }
+
+  .imagem2{
+    padding: 0.1px;
+    position: absolute;
+    top: 63%;
+    transform: translateY(-50%);
+    left: 66%;
+  }
+}
 </style>
 </head>
 <body>
@@ -152,11 +185,11 @@
   </div>
 
   <div class="imagem1">
-    <img src="imagens/foto1_inicio.jpeg" width="450px" height="220px">
+    <img src="imagens/foto1_inicio.jpeg" width="550px" height="320px">
   </div>
 
   <div class="imagem2">
-    <img src="imagens/foto2_inicio.jpeg" width="450px" height="220px">
+    <img src="imagens/foto2_inicio.jpeg" width="550px" height="320px">
   </div>
 </div>
 </div>
