@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,41 +12,43 @@
     <title>Cadastro de ADM</title>
 
 </head>
+
 <body>
-    
-<div id="img">
-<img src="../imagens/logo1.png" width="200" heigth="200" />
-</div>
 
-<br>
-<div class="container">
-    <br><br>
-    
-<form action="cadastra_adm.php" method="POST">
+    <div id="img">
+        <img src="../imagens/logo1.png" width="200" heigth="200" />
+    </div>
 
-    <div class="form-group">
-        <label for="nome"> Nome </label><br>
-        <input type="text"  name="nome" class="form-control" placeholder="Digite seu nome">
-	</div>
-	  
-    <div class="form-group">
-	    <label for="email"> Email </label><br>
-        <input type="text" name="email" class="form-control" placeholder="Digite o email">
-	</div> 
-
-    <div class="form-group">
-	    <label for="cpf"> Senha </label><br>
-        <input type="password"  name="senha" class="form-control" placeholder="Digite a senha">
-
+    <br>
+    <div class="container">
         <br><br>
-        <input type="password"  name="senhacon" class="form-control" placeholder="Confirme a senha">
-    </div><br><br>
 
-    <input type="submit" value="Cadastrar" class="btn">
+        <form action="cadastra_adm.php" method="POST">
 
-   </form>
-   <br><br>
-</div>
+            <div class="form-group">
+                <label for="nome"> Nome </label><br>
+                <input type="text" name="nome" class="form-control" placeholder="Digite seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email"> Email </label><br>
+                <input type="text" name="email" class="form-control" placeholder="Digite o email">
+            </div>
+
+            <div class="form-group">
+                <label for="cpf"> Senha </label><br>
+                <input type="password" name="senha" class="form-control" placeholder="Digite a senha">
+
+                <br><br>
+                <input type="password" name="senhacon" class="form-control" placeholder="Confirme a senha">
+            </div><br><br>
+
+            <input type="submit" value="Cadastrar" class="btn">
+
+        </form>
+        <br><br>
+    </div>
 
 </body>
+
 </html>
