@@ -10,16 +10,6 @@ CREATE TABLE tb_adm
  email_adm VARCHAR(40)
 );
 
-CREATE TABLE tb_produto
-(
- id_prod INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- cod_adm INT NOT NULL,
- nome_prod VARCHAR(40),
- desc_prod VARCHAR(100),
- valor_prod NUMERIC(4,2),
- FOREIGN KEY(cod_adm) REFERENCES tb_adm(id_adm)
-);
-
 CREATE TABLE tb_cliente
 (
  id_cli INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
