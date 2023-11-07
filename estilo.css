@@ -20,7 +20,7 @@ label {
     text-align: center;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], select {
     background-color: #f5f5f5;
     color: #333;
     border: 1px solid #ddd;
