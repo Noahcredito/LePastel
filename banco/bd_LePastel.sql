@@ -21,7 +21,10 @@ CREATE TABLE tb_cliente
  bairro_cli VARCHAR(20),
  rua_cli VARCHAR(40),
  numero_cli VARCHAR(4),
- telefone_cli VARCHAR(15)
+ telefone_cli VARCHAR(15),
+ cep_cli VARCHAR(10),
+ complemento_cli VARCHAR(25),
+ cidade_cli VARCHAR(50)
 );
 
 CREATE TABLE tb_sorteio
@@ -33,3 +36,11 @@ CREATE TABLE tb_sorteio
  FOREIGN KEY(cod_cli) REFERENCES tb_cliente(id_cli),
  FOREIGN KEY(cod_adm) REFERENCES tb_adm(id_adm)
 );
+
+CREATE TABLE tb_cli_sort
+(
+cod_adm INT,
+cod_cli INT,
+FOREIGN KEY(cod_cli) REFERENCES tb_cliente(id_cli),
+FOREIGN KEY(cod_adm) REFERENCES tb_adm(id_adm)
+)
