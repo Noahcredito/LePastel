@@ -40,11 +40,11 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px){
   .box{
-    font-size: 13.96px;
+    font-size: 16.06px;
     text-align: center;
     background-color: #FFFFFF;
-    width: 400px;
-    height: 400px;
+    width: 460px;
+    height: 460px;
     border-radius: 50px;
     padding: 0.1px;
     position: absolute;

@@ -18,6 +18,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem2{
   position: absolute;
@@ -33,6 +34,8 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
+  
 }
 .imagem3{
   position: absolute;
@@ -48,6 +51,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem4{
   position: absolute;
@@ -63,6 +67,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem5{
   position: absolute;
@@ -78,6 +83,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem6{
   position: absolute;
@@ -93,6 +99,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem7{
   position: absolute;
@@ -108,6 +115,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem8{
   position: absolute;
@@ -123,6 +131,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem9{
   position: absolute;
@@ -138,6 +147,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem10{
   position: absolute;
@@ -153,6 +163,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem11{
   position: absolute;
@@ -168,6 +179,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem12{
   position: absolute;
@@ -183,6 +195,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem13{
   position: absolute;
@@ -198,6 +211,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem14{
   position: absolute;
@@ -213,6 +227,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem15{
   position: absolute;
@@ -228,6 +243,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem16{
   position: absolute;
@@ -243,6 +259,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem17{
   position: absolute;
@@ -258,6 +275,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem18{
   position: absolute;
@@ -273,6 +291,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem19{
   position: absolute;
@@ -288,6 +307,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem20{
   position: absolute;
@@ -303,6 +323,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem21{
   position: absolute;
@@ -318,6 +339,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem22{
   position: absolute;
@@ -333,12 +355,14 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .texto{
   position: absolute;
   top: 270%;
   left: 17.1%;
   font-family: Alice;
+  color: #000000;
 }
 .imagem23{
   position: absolute;
@@ -354,6 +378,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem24{
   position: absolute;
@@ -369,6 +394,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem25{
   position: absolute;
@@ -384,6 +410,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem26{
   position: absolute;
@@ -399,6 +426,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 .imagem27{
   position: absolute;
@@ -414,6 +442,7 @@ body {margin:0;}
   font-size: 20px;
   left: 34.2%;
   text-align: center;
+  color: #000000;
 }
 @media screen and (max-width:768px){
   .imagem1{
@@ -682,6 +711,6 @@ a:active {
     <p>P R$18,00<br>
     G R$21,00</p>
     </div>
-  </div><br><br><br><br><br><br><br>
+  </div>
 </body>
 </html>
