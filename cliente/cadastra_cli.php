@@ -9,7 +9,7 @@
 <body>
 
 <?php
-header("refresh:2;url=frm_cadastra_cli.html");
+header("refresh:2;url=../index.php");
     /*1- realizando a conexao com o banco de dados (local, usuario,senha,nomeBanco)*/
 
         require "../conexao.php";
@@ -26,7 +26,6 @@ header("refresh:2;url=frm_cadastra_cli.html");
         $numero=$_POST["numero"];
         $complemento=$_POST["complemento"];
         $telefone=$_POST["telefone"];
-
     /*3- criando o comando sql para insercao do registro */
 
       $comandoSql="INSERT INTO tb_cliente

@@ -18,7 +18,6 @@
         $nome=$_POST["nome"];
         $email=$_POST["email"];
         $senha=$_POST["senha"];
-
     /*3- criando o comando sql para insercao do registro */
 
       $comandoSql="INSERT INTO tb_adm
