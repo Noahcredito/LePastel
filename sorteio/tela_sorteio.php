@@ -27,13 +27,13 @@ body {
     font-size: 22px;
     text-align: justify;
     background-color: #FFFFFF;
-    width: 100%; /* Alterado para ocupar toda a largura disponível */
-    max-width: none; /* Removido o tamanho máximo */
+    width: 100%;
+    max-width: none;
     padding: 5%;
     font-family: Alice;
-    margin-left: 19%; /* Espaço para a barra lateral */
-    margin-top: 3%; /* Margem superior */
-    margin-right: 3%; /* Margem direita */
+    margin-left: 19%;
+    margin-top: 3%;
+    margin-right: 3%;
     border-radius: 5%;
 }
 
@@ -42,11 +42,9 @@ body {
     justify-content: flex-end;
 }
 
-
-/* Adicione uma media query para ajustar o tamanho em telas menores, se necessário */
 @media (max-width: 768px) {
     .conteiner {
-        font-size: 18px; /* Ajuste o tamanho da fonte em telas menores */
+        font-size: 18px;
     }
 }
 
@@ -59,26 +57,23 @@ body {
 
 <body>
 
-    <?php require '../barra_lateral.html';
+    <?php 
+    ini_set('session.cookie_httponly', 1);
+    session_start();
+
+    require '../barra_lateral.html';
     require '../conexao.php';
-
+    
     echo "<div class='conteiner'>";
-    /*espaço pro select/combo box*/
-
 
 
     echo '<form action="processa_cadastro.php" method="post">';
 
-    /*2- criando o comando sql para consulta dos registros */
     $comandoSql = "select id_cli, nome_cli from tb_cliente";
 
-    /*3- executando o comando sql */
     $resultado = mysqli_query($con, $comandoSql);
 
-    //criando o objeto select
-
     echo "<select name='cli' id='cli' class='form-control'>";
-    /*4- pegando os dados da consulta criada e exibindo */
     while ($dados = mysqli_fetch_assoc($resultado)) {
         $id = $dados["id_cli"];
         $nome = $dados["nome_cli"];
@@ -87,7 +82,7 @@ body {
     echo "</select>" . '<input type="submit" id="btnCadastro" value="Cadastrar">' .
         '</form>';
 
-    /*espaço para mostrar usuários da tb_cli_sort*/
+
     echo '<button id="btnAtualizarDados">Atualizar Dados</button>';
 
     echo '<button id="btnSorteio">Sortear</button>';
@@ -98,20 +93,19 @@ body {
 
     echo "<br><br>";
 
-    echo '<p>Sorteado: <span id="idSorteado"></span></p><br>';
+    echo '<p><span id="idSorteado"></span></p><br>';
 
     echo '<div id="dados">';
-    // Verifica se a conexão foi bem-sucedida
+
     if (!$con) {
         die("Falha na conexão: " . mysqli_connect_error());
     }
 
-    // Consulta SQL para buscar os dados (substitua pela sua consulta)
+
     $sql = "SELECT * FROM tb_cli_sort cs
     JOIN tb_cliente c ON (cs.cod_cli = c.id_cli);";
     $resultado = mysqli_query($con, $sql);
 
-    // Exibe os dados na página
     if (mysqli_num_rows($resultado) > 0) {
         while ($linha = mysqli_fetch_assoc($resultado)) {
             if (isset($linha['nome_cli'])) {
@@ -122,7 +116,6 @@ body {
         echo "Nenhum dado encontrado";
     }
 
-    // Fecha a conexão com o banco de dados
     mysqli_close($con);
     echo '</div>'
 
@@ -143,29 +136,51 @@ body {
         });
 
 
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById("btnSorteio").addEventListener("click", function() {
-                // Fazer uma solicitação ao "sorteador.php"
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "sorteador.php", true);
-                xhr.onreadystatechange = function() {
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        document.getElementById("idSorteado").textContent = xhr.responseText;
-                    } else if (xhr.status !== 200) {
-                        alert("Erro ao sortear o cliente.");
-                    }
-                };
-                xhr.send();
-            });
-        });
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("btnSorteio").addEventListener("click", function() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "sorteador.php", true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var sorteioResponse = JSON.parse(xhr.responseText);
+                    document.getElementById("idSorteado").textContent = sorteioResponse.sorteado;
+
+                    var cod_cli = sorteioResponse.sorteado;
+                    var cod_adm = <?php echo $_SESSION['user_id']; ?>;
+                    var data = sorteioResponse.data;
+
+                    var xhrInserirSorteio = new XMLHttpRequest();
+                    xhrInserirSorteio.open("GET", "sorteador.php?cod_cli=" + cod_cli + "&cod_adm=" + cod_adm + "&data=" + data, true);
+                    xhrInserirSorteio.onreadystatechange = function() {
+                        if (xhrInserirSorteio.readyState === 4) {
+                            if (xhrInserirSorteio.status === 200) {
+                                document.getElementById("alerta").style.display = "block";
+                                setTimeout(function() {
+                                    document.getElementById("alerta").style.display = "none";
+                                }, 3000);
+                            } else {
+                                alert("Erro ao salvar o sorteio.");
+                            }
+                        }
+                    };
+                    xhrInserirSorteio.send();
+                } else {
+                    alert("Erro ao sortear o cliente.");
+                }
+            }
+        };
+        xhr.send();
+    });
+});
+
 
         document.getElementById('btnLimpar').addEventListener('click', function() {
-            // Fazer uma solicitação para o arquivo "limpar.php"
             var xhr = new XMLHttpRequest();
             xhr.open("GET", "limpar.php", true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert(xhr.responseText); // Exibe a resposta do servidor em um alerta
+                    alert(xhr.responseText);
                 } else if (xhr.status !== 200) {
                     alert("Erro ao apagar dados.");
                 }
