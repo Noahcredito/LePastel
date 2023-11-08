@@ -32,7 +32,7 @@ CREATE TABLE tb_sorteio
  id_sor INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  cod_cli INT NOT NULL,
  cod_adm INT NOT NULL,
- data_sor DATE,
+ data_sor DATETIME,
  FOREIGN KEY(cod_cli) REFERENCES tb_cliente(id_cli),
  FOREIGN KEY(cod_adm) REFERENCES tb_adm(id_adm)
 );
