@@ -59,8 +59,7 @@ body {
 
 <body>
 
-    <?php require '../cliente/lista_cli_select.php';
-    require '../barra_lateral.html';
+    <?php require '../barra_lateral.html';
     require '../conexao.php';
 
     echo "<div class='conteiner'>";
@@ -94,6 +93,8 @@ body {
     echo '<button id="btnSorteio">Sortear</button>';
 
     echo '<button id="btnLimpar">Limpar</button>';
+
+    echo '<button id="btnListar">Listar sorteios</button>';
 
     echo "<br><br>";
 
@@ -133,7 +134,11 @@ body {
             location.reload();
         });
 
-        document.getElementById('btnLimpar  ').addEventListener('click', function() {
+        document.getElementById('btnListar').addEventListener('click', function() {
+            window.location.assign("lista_sort.php");
+        });
+
+        document.getElementById('btnLimpar').addEventListener('click', function() {
             location.reload();
         });
 
