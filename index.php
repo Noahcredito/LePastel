@@ -172,11 +172,9 @@
 </style>
 </head>
 <body>
-<?php 
-ini_set('session.cookie_httponly', 1);
-session_start();
+<?php
 
-require 'barra_lateral.html'?>
+require 'barra_lateral.php'?>
 <div class="container">
 <div class="item">
 <div class="box">

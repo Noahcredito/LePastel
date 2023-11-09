@@ -238,7 +238,7 @@ a:active {
   </div>
 
   <div class="imagem5">
-    <img src = "imagens/carne.png" width="250px" height="250px">
+    <img src = "imagens/guarana_1litro.png" width="250px" height="250px">
     <div class="texto5">
     <p>GUARANÁ 1lt<br>
     R$6,00</p>
@@ -246,7 +246,7 @@ a:active {
   </div>
 
   <div class="imagem6">
-    <img src = "imagens/carne_com_azeitona.png" width="250px" height="250px">
+    <img src = "imagens/guarana_2litros.png" width="250px" height="250px">
     <div class="texto6">
     <p>GUARANÁ 2lt<br>
     R$9,00</p>

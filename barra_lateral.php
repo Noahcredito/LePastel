@@ -1,3 +1,7 @@
+<?php
+ini_set('session.cookie_httponly', 1);
+session_start()?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +15,35 @@ body {margin:0;}
   top: 0;
   width: 17%;
   height: 100%;
+}
+
+#botaoCadastrar{
+  background-color: #FFCE08;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#botaoLogin{
+  background-color: #FFCE08;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3636B3;
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
 }
 
 .imagem{
@@ -410,9 +443,22 @@ label span:nth-child(3){
 </style>
 </head>
 <body style="background-color:#FFE780">
+<?php
 
-<div class="navbar">
-    <img src = "imagens/logo.png" width="100%" height="200px">
+echo"<div class='navbar'>";
+    echo"<img src = 'imagens/logo.png' width='100%' height='200px'>";
+
+    if(!isset($_SESSION['user'])){
+      echo"<a href='cliente/frm_cadastra_cli.html'>
+             <button id='botaoCadastrar' class='btn'>Cadastre-se</button>
+           </a>
+
+           <a href='frm_login.html'>
+             <button id='botaoLogin' class='btn'>Fazer Login</button>
+           </a>";
+    };
+?>
+
   <div class="container">
 
     <input type="checkbox" id="menu-toggle">

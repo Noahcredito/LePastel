@@ -464,7 +464,7 @@ a:active {
 </style>
 </head>
 <body>
-<?php require 'barra_lateral.html'?>
+<?php require 'barra_lateral.php'?>
 
   <div class="imagem1">
     <img src = "imagens/vento.png" width="250px" height="250px">
