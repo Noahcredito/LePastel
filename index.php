@@ -27,7 +27,7 @@ session_start();
       background-color: #FFFFFF;
     }
     .box {
-      font-size: 18.7px;
+      font-size: 19.5px;
       text-align: center;
       background-color: #FFFFFF;
       width: 550px;
