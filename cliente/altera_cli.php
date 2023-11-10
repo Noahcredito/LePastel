@@ -1,8 +1,12 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <!-- Meta tags Obrigatórias -->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,22 +14,22 @@
 </head>
 
 <body>
-  <div class="container">
     <?php
-
+    header("refresh:2; url='../index.php'");
     require "../conexao.php";
 
-    $id = $_POST["id_cli"];
-    $nome = $_POST["nome_cli"];
-    $email = $_POST["email_cli"];
-    $senha = $_POST["senha_cli"];
-    $bairro = $_POST["bairro_cli"];
-    $cep = $_POST["cep_cli"];
-    $cidade = $_POST["cidade_cli"];
-    $rua = $_POST["rua_cli"];
-    $numero = $_POST["numero_cli"];
-    $complemento = $_POST["complemento_cli"];
-    $telefone = $_POST["telefone_cli"];
+    $id=$_SESSION['user_id'];
+
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $senha = $_POST["senha"];
+    $bairro = $_POST["bairro"];
+    $cep = $_POST["cep"];
+    $cidade = $_POST["cidade"];
+    $rua = $_POST["rua"];
+    $numero = $_POST["numero"];
+    $complemento = $_POST["complemento"];
+    $telefone = $_POST["telefone"];
 
     $comandoSql = "update tb_cliente set 
     nome_cli='$nome', email_cli='$email', senha_cli='$senha', bairro_cli='$bairro', cep_cli='$cep', cidade_cli='$cidade',
@@ -38,11 +42,8 @@
     else
       echo "Erro na alteração";
 
-
-
     ?>
 
-  </div>
 </body>
 
 </html>

@@ -65,52 +65,52 @@ require "../barra_lateral_pasta.php";
 
       <div class="form-group">
         <label for="nome"> Nome </label>
-        <input type="text" id="nome" class="form-control" value="<?php echo $nome ?>">
+        <input type="text" name="nome" id="nome" class="form-control" value="<?php echo $nome ?>">
       </div>
 
       <div class="form-group">
         <label for="email"> Email </label>
-        <input type="email" id="email" class="form-control" value="<?php echo $email ?>">
+        <input type="email" name="email" id="email" class="form-control" value="<?php echo $email ?>">
       </div>
 
       <div class="form-group">
         <label for="senha"> Senha </label>
-        <input type="password" id="senha" class="form-control" value="<?php echo $senha ?>">
+        <input type="password" name="senha" id="senha" class="form-control" value="<?php echo $senha ?>">
       </div>
 
       <div class="form-group">
         <label for="cep"> CEP </label>
-        <input type="text" id="cep" class="form-control" value="<?php echo $cep ?>">
+        <input type="text" id="cep" name="cep" class="form-control" value="<?php echo $cep ?>">
       </div>
 
       <div class="form-group">
         <label for="cidade"> Cidade </label>
-        <input type="text" id="cidade" class="form-control" value="<?php echo $cidade ?>">
+        <input type="text" id="cidade" name="cidade" class="form-control" value="<?php echo $cidade ?>">
       </div>
 
       <div class="form-group">
         <label for="bairro"> Bairro </label>
-        <input type="text" id="bairro" class="form-control" value="<?php echo $bairro ?>">
+        <input type="text" id="bairro" name="bairro" class="form-control" value="<?php echo $bairro ?>">
       </div>
 
       <div class="form-group">
         <label for="rua"> Rua </label>
-        <input type="text" id="rua" class="form-control" value="<?php echo $rua ?>">
+        <input type="text" name="rua" id="rua" class="form-control" value="<?php echo $rua ?>">
       </div>
 
       <div class="form-group">
         <label for="numero"> Numero </label>
-        <input type="text" id="numero" class="form-control" value="<?php echo $numero ?>">
+        <input type="text" name="numero" id="numero" class="form-control" value="<?php echo $numero ?>">
       </div>
 
       <div class="form-group">
         <label for="complemento"> Complemento </label>
-        <input type="text" id="complemento" class="form-control" value="<?php echo $complemento ?>">
+        <input type="text" name="complemento" id="complemento" class="form-control" value="<?php echo $complemento ?>">
       </div>
 
       <div class="form-group">
         <label for="telefone"> Telefone </label>
-        <input type="text" id="telefone" class="form-control" value="<?php echo $telefone ?>">
+        <input type="text" name="telefone" id="telefone" class="form-control" value="<?php echo $telefone ?>">
       </div>
 
       <input type="submit" value="Alterar" class="btn">
