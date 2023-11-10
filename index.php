@@ -86,17 +86,11 @@ session_start();
   };
 
   echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
-  if ($nomeCliente) {
-      echo "Cliente sorteado: $nomeCliente";
-  }
-  echo "</div>";
+if ($nomeCliente) {
+    echo "Cliente sorteado: $nomeCliente";
+}
+echo "</div>";
   ?>
-
-  <div class="header">
-    <?php if ($nomeCliente) : ?>
-      <h2>Cliente: <?php echo $nomeCliente; ?></h2>
-    <?php endif; ?>
-  </div>
 
 <div class="box">
     <p> SOBRE NÓS </p>
