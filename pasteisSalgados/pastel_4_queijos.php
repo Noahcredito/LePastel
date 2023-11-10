@@ -1,3 +1,8 @@
+<?php
+ini_set('session.cookie_httponly', 1);
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +35,7 @@ body {margin:0;}
 </style>
 </head>
 <body style="background-color:#FFE780">
-<?php require 'barra_lateral.html'?>
+<?php require 'barra_lateral_pasta.html'?>
   <div class="imagem-pastel">
     <img src = "imagens/4_queijos.png" width="50%" height="50%">
   </div>
