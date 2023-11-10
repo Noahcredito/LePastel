@@ -28,6 +28,7 @@ session_start();
       background-color: #FFFFFF;
     }
 
+<<<<<<< HEAD
     .box {
       font-size: 18.7px;
       text-align: center;
@@ -193,8 +194,19 @@ session_start();
       }
     }
   </style>
+=======
+.imagem2{
+  padding: 0.1px;
+  position: absolute;
+  top: 64%;
+  transform: translateY(-50%);
+  left: 65%;
+}
+</style>
+>>>>>>> 6dde4aaa791c015f4a60ca9a4fb6d42aa0623672
 </head>
 
+<<<<<<< HEAD
 <body>
   <?php
   require 'barra_lateral.php';
@@ -226,6 +238,10 @@ session_start();
   </div>
 
   <div class="box">
+=======
+require 'barra_lateral.php'?>
+<div class="box">
+>>>>>>> 6dde4aaa791c015f4a60ca9a4fb6d42aa0623672
     <p> SOBRE NÓS </p>
     <p>A Le Pastel nasceu do sonho da sua fundadora de empreender e compartilhar suas delícias com todos que amam uma boa comida. No ano de 2021 o projeto foi tirado do papel e finalmente o sonho teve início.</p>
     <p>Iniciamos com poucos sabores e com uma equipe reduzida, mas após 2 anos podemos dizer que conquistamos o paladar dos amantes de pastel da nossa cidade.</p>

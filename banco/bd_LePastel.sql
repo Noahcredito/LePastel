@@ -9,7 +9,8 @@ CREATE TABLE tb_adm
  id_adm INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nome_adm VARCHAR(40),
  senha_adm VARCHAR(15),
- email_adm VARCHAR(40)
+ email_adm VARCHAR(40),
+ status_adm INT
 );
 
 CREATE TABLE tb_cliente
@@ -23,8 +24,9 @@ CREATE TABLE tb_cliente
  numero_cli VARCHAR(4),
  telefone_cli VARCHAR(15),
  cep_cli VARCHAR(10),
- complemento_cli VARCHAR(25),
- cidade_cli VARCHAR(50)
+ complemento_cli VARCHAR(50),
+ cidade_cli VARCHAR(50),
+ status_cli INT
 );
 
 CREATE TABLE tb_sorteio
@@ -43,4 +45,8 @@ cod_adm INT,
 cod_cli INT,
 FOREIGN KEY(cod_cli) REFERENCES tb_cliente(id_cli),
 FOREIGN KEY(cod_adm) REFERENCES tb_adm(id_adm)
+<<<<<<< HEAD
 );
+=======
+)
+>>>>>>> 6dde4aaa791c015f4a60ca9a4fb6d42aa0623672

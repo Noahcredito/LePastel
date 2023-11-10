@@ -154,290 +154,33 @@ label span:nth-child(3){
     left: 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
-  .navbar{
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    width: 17%;
-    height: 100%;
-  }
-
-  .imagem{
-    cursor: pointer;
-    width: 100%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container{
-    width: 50%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #menu-toggle {
+#caixaLinks{
     display: none;
-  }
-
-  #menu-icon {
-    font-size: 35px;
-    cursor: pointer;
-    position: fixed;
-    top: 32%;
-    left: 7.5%;
-    z-index: 2;
-    color: #FFCE08;
-  }
-
-  #menu {
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
-    position: fixed;
-    left: -280px;
-    width: 271.5px;
-    height: 165px;
-    transition: left 0.3s;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
     z-index: 1;
-  }
-
-  #menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #menu ul li {
-    padding: 15px;
-  }
-
-  #menu ul li a {
-    color: #000000;
-  }
-
-  #menu-toggle:checked + #menu-icon + #menu {
-    left: 0;
-  }
+    cursor: pointer;
+    top: 82%;
+    left: 30%;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
-  .navbar{
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    width: 17%;
-    height: 100%;
-  }
-
-  .imagem{
-    cursor: pointer;
-    width: 100%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container{
-    width: 50%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #menu-toggle {
-    display: none;
-  }
-
-  #menu-icon {
-    font-size: 35px;
-    cursor: pointer;
-    position: fixed;
-    top: 32%;
-    left: 7.5%;
-    z-index: 2;
-    color: #FFCE08;
-  }
-
-  #menu {
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
-    position: fixed;
-    left: -280px;
-    width: 271.5px;
-    height: 165px;
-    transition: left 0.3s;
-    z-index: 1;
-  }
-
-  #menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #menu ul li {
-    padding: 15px;
-  }
-
-  #menu ul li a {
-    color: #000000;
-  }
-
-  #menu-toggle:checked + #menu-icon + #menu {
-    left: 0;
-  }
+#caixaLinks a{
+      color: #000000;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px){
-  .navbar{
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    width: 17%;
-    height: 100%;
-  }
-
-  .imagem{
-    cursor: pointer;
-    width: 100%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container{
-    width: 50%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #menu-toggle {
-    display: none;
-  }
-
-  #menu-icon {
-    font-size: 35px;
-    cursor: pointer;
-    position: fixed;
-    top: 32%;
-    left: 7.5%;
-    z-index: 2;
-    color: #FFCE08;
-  }
-
-  #menu {
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
-    position: fixed;
-    left: -280px;
-    width: 271.5px;
-    height: 165px;
-    transition: left 0.3s;
-    z-index: 1;
-  }
-
-  #menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #menu ul li {
-    padding: 15px;
-  }
-
-  #menu ul li a {
-    color: #000000;
-  }
-
-  #menu-toggle:checked + #menu-icon + #menu {
-    left: 0;
-  }
-}
-
-@media screen and (min-width: 1920px){
-  .navbar{
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    width: 14.15%;
-    height: 100%;
-  }
-
-  .imagem{
-    cursor: pointer;
-    width: 100%;
-    height: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container{
-    width: 50%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #menu-toggle {
-    display: none;
-  }
-
-  #menu-icon {
-    font-size: 35px;
-    cursor: pointer;
-    position: fixed;
-    top: 43%;
-    left: 6.5%;
-    z-index: 2;
-    color: #FFCE08;
-  }
-
-  #menu {
-    background-color: #FFFFFF;
-    color: #000000;
-    text-align: center;
-    position: fixed;
-    left: -280px;
-    width: 271.5px;
-    height: 165px;
-    transition: left 0.3s;
-    z-index: 1;
-  }
-
-  #menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #menu ul li {
-    padding: 15px;
-  }
-
-  #menu ul li a {
-    color: #000000;
-  }
-
-  #menu-toggle:checked + #menu-icon + #menu {
-    left: 0;
-  }
+#caixaLinks a:hover{
+      color: #000000;
 }
 </style>
+
+<script>
+    function toggleCaixa() {
+      var caixa = document.getElementById("caixaLinks");
+      caixa.style.display = (caixa.style.display === "none") ? "block" : "none";
+    }
+</script>
 </head>
 <body style="background-color:#FFE780">
 <?php
@@ -462,8 +205,8 @@ echo"<div class='navbar'>";
     <label for="menu-toggle" id="menu-icon">&#9776;</label>
     <div id="menu">
         <ul>
-            <li><a href="tela_salgados.php">Pastéis Salgados</a></li>
-            <li><a href="tela_doces.php">Pastéis Doces</a></li>
+            <li><a href="pasteisSalgados/tela_salgados.php">Pastéis Salgados</a></li>
+            <li><a href="pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
             <li><a href="tela_bebidas.php">Bebidas</a></li>
         </ul>
     </div>
@@ -492,8 +235,16 @@ echo"<div class='navbar'>";
   </div>
 
   <div class="imagem">
-    <img src = "imagens/engrenagem.png" width="40px" height="40px">
+     <img src = "imagens/engrenagem.png" width="40px" height="40px" alt="Imagem" onclick="toggleCaixa()">
   </div>
+
+  <div id="caixaLinks">
+    <a href="cliente/frm_altera_cli.php">Alterar Perfil</a>
+  </div>
+
+  <!--div class="imagem">
+    <img src = "imagens/engrenagem.png" width="40px" height="40px">
+  </div-->
 </div>
 </body>
 
