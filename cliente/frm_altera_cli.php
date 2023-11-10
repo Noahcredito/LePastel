@@ -48,6 +48,28 @@ session_start();
       transform: translateY(1px);
       box-shadow: none;
     }
+
+    #btnDesativar {
+      margin-bottom: 10px;
+      background-color: red;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #btnDesativar:hover {
+      background-color: darkred;
+    }
+
+    #btnDesativar:active {
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
   </style>
 
   <title>Alteração de Cliente</title>
