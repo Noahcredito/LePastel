@@ -45,8 +45,4 @@ cod_adm INT,
 cod_cli INT,
 FOREIGN KEY(cod_cli) REFERENCES tb_cliente(id_cli),
 FOREIGN KEY(cod_adm) REFERENCES tb_adm(id_adm)
-<<<<<<< HEAD
 );
-=======
-)
->>>>>>> 6dde4aaa791c015f4a60ca9a4fb6d42aa0623672

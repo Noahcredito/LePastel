@@ -15,20 +15,18 @@
             overflow: hidden;
         }
 
-
-
         .conteiner {
             font-size: 22px;
             text-align: justify;
             background-color: #FFFFFF;
-            width: 100%;/* Alterado para ocupar toda a largura disponível */
-            max-width: none;/* Removido o tamanho máximo */
+            width: 100%;
+            max-width: none;
             padding: 5%;
             font-family: Alice;
-            margin-left: 19%;/* Espaço para a barra lateral */
-            margin-top: 3%;/* Margem superior */
-            margin-right: 3%;/* Margem direita */
-            border-radius: 5%;
+            margin-left: 19%;
+            margin-top: 5%;
+            margin-right: 3%;
+            border-radius: 20px;
         }
     </style>
 
@@ -38,28 +36,26 @@
 <body>
     <?php
     require "../conexao.php";
-    require "../barra_lateral.html";
+    require "../barra_lateral_pasta.php";
+    echo '<div class="conteiner">';
+    $comandoSql = "SELECT a.nome_adm, c.nome_cli, data_sor FROM tb_sorteio s
+                   JOIN tb_adm a ON (s.cod_adm = a.id_adm)
+                   JOIN tb_cliente c ON (s.cod_cli = c.id_cli);";
 
-    /*2- criando o comando sql para consulta dos registros */
-    $comandoSql = "SELECT nome_adm, nome_cli, data_sor from tb_sorteio s
-     JOIN tb_adm a ON (s.cod_adm = a.id_adm)
-     JOIN tb_cliente c ON (c.id_cli = s.cod_cli);";
-
-    /*3- executando o comando sql */
     $resultado = mysqli_query($con, $comandoSql);
 
-    /*4- pegando os dados da consulta criada e exibindo */
     while ($dados = mysqli_fetch_assoc($resultado)) {
-        $nomeAdm = $_GET["nome_adm"];
-        $nomeCli = $_GET["nome_cli"];
-        $data = $_GET["data_sor"];
+        $nomeAdm = $dados["nome_adm"];
+        $nomeCli = $dados["nome_cli"];
+        $data = $dados["data_sor"];
 
         echo "Nome do administrador: $nomeAdm <br>";
-        echo "Nome do cliente: $nomeCli<br>";
+        echo "Nome do cliente: $nomeCli <br>";
         echo "Data: $data <br>";
 
         echo "<hr>";
     }
+    echo '</div>';
     ?>
 </body>
 

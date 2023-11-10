@@ -21,7 +21,19 @@ body {
     overflow: hidden;
 }
 
-
+.header {
+      margin-left: auto;
+      left: 17%;
+      margin-right: auto;
+      position: absolute;
+      width: 83%;
+      align-items: center;
+      text-align: center;
+      font-family: Alice;
+      padding: 8px;
+      background-color: #FFFFFF;
+      font-size: 20px;
+    }
 
 .conteiner {
     font-size: 22px;
@@ -32,9 +44,9 @@ body {
     padding: 5%;
     font-family: Alice;
     margin-left: 19%;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-right: 3%;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 #btnCadastro {
@@ -61,11 +73,34 @@ body {
     ini_set('session.cookie_httponly', 1);
     session_start();
 
-    require '../barra_lateral.html';
+    require '../barra_lateral_pasta.php';
     require '../conexao.php';
     
-    echo "<div class='conteiner'>";
+    $sql = "SELECT c.nome_cli FROM tb_sorteio s
+    JOIN tb_cliente c ON (s.cod_cli = c.id_cli)
+    WHERE s.data_sor >= DATE_SUB(NOW(), INTERVAL 1 DAY)
+    AND s.data_sor <= NOW()
+    LIMIT 1;";
+  
+    $result = $con->query($sql);
+  
+    if ($result === false) {
+      die('Erro na consulta: ' . $con->error);
+    }
+    if ($result->num_rows > 0) {
+      $row = $result->fetch_assoc();
+      $nomeCliente = $row['nome_cli'];
+    } else {
+      $nomeCliente = null;
+    };
+  
+    echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
+    if ($nomeCliente) {
+        echo "Cliente sorteado: $nomeCliente";
+    }
+    echo "</div>";
 
+    echo "<div class='conteiner'>";
 
     echo '<form action="processa_cadastro.php" method="post">';
 
