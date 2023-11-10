@@ -118,7 +118,7 @@ a:active {
 </style>
 </head>
 <body>
-<?php require '../barra_lateral.php'?>
+<?php require '../barra_lateral_pasta.php'?>
 
   <div class="imagem1">
     <img src = "imagens/doce_de_leite.png" width="250px" height="250px">

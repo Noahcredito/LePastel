@@ -161,7 +161,7 @@ label span:nth-child(3){
     padding: 10px;
     z-index: 1;
     cursor: pointer;
-    top: 82%;
+    top: 84%;
     left: 30%;
 }
 
