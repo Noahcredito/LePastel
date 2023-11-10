@@ -43,4 +43,4 @@ cod_adm INT,
 cod_cli INT,
 FOREIGN KEY(cod_cli) REFERENCES tb_cliente(id_cli),
 FOREIGN KEY(cod_adm) REFERENCES tb_adm(id_adm)
-)
+);
