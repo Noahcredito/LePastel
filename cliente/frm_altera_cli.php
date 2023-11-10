@@ -138,6 +138,18 @@ session_start();
 
   </form>
 
+  <button id="btnDesativar" onclick="confirmarDesativacao()">Desativar conta</button>
+
+  <script>
+    function confirmarDesativacao() {
+      var confirmar = confirm("Você realmente deseja desativar sua conta?");
+
+      if (confirmar)
+        window.location.href = "desativa_cli.php";
+      else
+        alert("Operação cancelada pelo usuário.");
+    }
+  </script>
 
   </div>
 </body>
