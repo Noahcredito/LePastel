@@ -161,8 +161,8 @@ label span:nth-child(3){
     padding: 10px;
     z-index: 1;
     cursor: pointer;
-    top: 30%;
-    left: 10%;
+    top: 82%;
+    left: 30%;
 }
 
 #caixaLinks a{
