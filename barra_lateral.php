@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> bdc1d7bbb3c2c354ee6b71a77a022a84723eb9b2
 <!DOCTYPE html>
 <html>
 <head>
@@ -121,7 +117,7 @@ label span:nth-child(3){
     font-size: 35px;
     cursor: pointer;
     position: fixed;
-    top: 32%;
+    top: 45%;
     left: 7.5%;
     z-index: 2;
     color: #FFCE08;
@@ -133,7 +129,7 @@ label span:nth-child(3){
     text-align: center;
     position: fixed;
     left: -280px;
-    width: 271.5px;
+    width: 217px;
     height: 165px;
     transition: left 0.3s;
     z-index: 1;
@@ -165,8 +161,8 @@ label span:nth-child(3){
     padding: 10px;
     z-index: 1;
     cursor: pointer;
-    top: 82%;
-    left: 30%;
+    top: 30%;
+    left: 10%;
 }
 
 #caixaLinks a{

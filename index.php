@@ -193,20 +193,9 @@ session_start();
         left: 66%;
       }
     }
-  </style>
-=======
-.imagem2{
-  padding: 0.1px;
-  position: absolute;
-  top: 64%;
-  transform: translateY(-50%);
-  left: 65%;
-}
 </style>
->>>>>>> 6dde4aaa791c015f4a60ca9a4fb6d42aa0623672
 </head>
 
-<<<<<<< HEAD
 <body>
   <?php
   require 'barra_lateral.php';
