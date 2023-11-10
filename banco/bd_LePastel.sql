@@ -10,7 +10,7 @@ CREATE TABLE tb_adm
  nome_adm VARCHAR(40),
  senha_adm VARCHAR(15),
  email_adm VARCHAR(40),
- status_adm INT
+ STATUS BOOL
 );
 
 CREATE TABLE tb_cliente
@@ -24,9 +24,9 @@ CREATE TABLE tb_cliente
  numero_cli VARCHAR(4),
  telefone_cli VARCHAR(15),
  cep_cli VARCHAR(10),
- complemento_cli VARCHAR(50),
+ complemento_cli VARCHAR(25),
  cidade_cli VARCHAR(50),
- status_cli INT
+ STATUS BOOL
 );
 
 CREATE TABLE tb_sorteio
