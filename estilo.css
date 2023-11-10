@@ -39,21 +39,21 @@ input[type="text"], input[type="password"], select {
 
 .btn {
     margin-bottom: 10px;
-    background-color: #8080FF; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: none; /* Remover borda */
-    border-radius: 5px; /* Borda arredondada */
-    padding: 10px 20px; /* Espaçamento interno (cima/baixo esquerda/direita) */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor ao passar o mouse */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    background-color: #8080FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-    background-color: #3636B3; /* Cor de fundo diferente ao passar o mouse */
+    background-color: #3636B3;
 }
 
 .btn:active {
-    transform: translateY(1px); /* Efeito de afundamento ao clicar */
-    box-shadow: none; /* Remover sombra ao clicar */
+    transform: translateY(1px);
+    box-shadow: none;
 }
