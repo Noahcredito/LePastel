@@ -185,7 +185,9 @@ label span:nth-child(3){
 <?php
 
 echo"<div class='navbar'>";
-    echo"<img src = '../imagens/logo.png' width='100%' height='200px'>";
+    echo"<a href='../index.php'>
+          <img src = '../imagens/logo.png' width='100%' height='200px'>
+        </a>";
 
     if(!isset($_SESSION['user'])){
       echo"<a href='../cliente/frm_cadastra_cli.html'>
