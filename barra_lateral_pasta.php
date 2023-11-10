@@ -185,14 +185,14 @@ label span:nth-child(3){
 <?php
 
 echo"<div class='navbar'>";
-    echo"<img src = 'imagens/logo.png' width='100%' height='200px'>";
+    echo"<img src = '../imagens/logo.png' width='100%' height='200px'>";
 
     if(!isset($_SESSION['user'])){
-      echo"<a href='cliente/frm_cadastra_cli.html'>
+      echo"<a href='../cliente/frm_cadastra_cli.html'>
              <button id='botaoCadastrar' class='btn'>Cadastre-se</button>
            </a>
 
-           <a href='frm_login.html'>
+           <a href='../frm_login.html'>
              <button id='botaoLogin' class='btn'>Fazer Login</button>
            </a>";
     };
@@ -204,46 +204,21 @@ echo"<div class='navbar'>";
     <label for="menu-toggle" id="menu-icon">&#9776;</label>
     <div id="menu">
         <ul>
-            <li><a href="pasteisSalgados/tela_salgados.php">Pastéis Salgados</a></li>
-            <li><a href="pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
-            <li><a href="tela_bebidas.php">Bebidas</a></li>
+            <li><a href="../pasteisSalgados/tela_salgados.php">Pastéis Salgados</a></li>
+            <li><a href="../pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
+            <li><a href="../tela_bebidas.php">Bebidas</a></li>
         </ul>
     </div>
-
-    <!--div class="btn-group dropright">
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Cardápio
-      </button>
-      <div class="dropdown-menu">
-        <a href="tela_salgados.php">Pastéis Salgados</a>
-        <a href="tela_doces.php">Pastéis Doces</a><br>
-        <a href="tela_bebidas.php">Bebidas</a>
-      </div>
-    </div-->
-
-    <!--input type="checkbox" id="checkbox-menu">
-
-    <label for="checkbox-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-      <a href="tela_salgados.php">Pastéis Salgados</a>
-      <a href="tela_doces.php">Pastéis Doces</a>
-      <a href="tela_bebidas.php">Bebidas</a>
-    </label-->
   </div>
 
   <div class="imagem">
-     <img src = "imagens/engrenagem.png" width="40px" height="40px" alt="Imagem" onclick="toggleCaixa()">
+     <img src = "../imagens/engrenagem.png" width="40px" height="40px" alt="Imagem" onclick="toggleCaixa()">
   </div>
 
   <div id="caixaLinks">
-    <a href="cliente/frm_altera_cli.php">Alterar Perfil</a>
+    <a href="../cliente/frm_altera_cli.php">Alterar Perfil</a>
   </div>
 
-  <!--div class="imagem">
-    <img src = "imagens/engrenagem.png" width="40px" height="40px">
-  </div-->
 </div>
 </body>
 

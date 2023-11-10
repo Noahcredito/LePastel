@@ -1,3 +1,8 @@
+<?php
+ini_set('session.cookie_httponly', 1);
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -464,7 +469,7 @@ a:active {
 </style>
 </head>
 <body>
-<?php require 'barra_lateral.php'?>
+<?php require '../barra_lateral_pasta.php'?>
 
   <div class="imagem1">
     <img src = "imagens/vento.png" width="250px" height="250px">
