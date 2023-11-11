@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +44,7 @@
     echo '<div class="conteiner">';
     $comandoSql = "SELECT a.nome_adm, c.nome_cli, data_sor FROM tb_sorteio s
                    JOIN tb_adm a ON (s.cod_adm = a.id_adm)
-                   JOIN tb_cliente c ON (s.cod_cli = c.id_cli);";
+                   JOIN tb_cliente c ON (s.cod_cli = c.id_cli) ORDER BY s.id_sor desc;";
 
     $resultado = mysqli_query($con, $comandoSql);
 
