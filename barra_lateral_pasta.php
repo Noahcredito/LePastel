@@ -174,10 +174,17 @@ echo"<div class='navbar'>";
      <img src = "../imagens/engrenagem.png" width="40px" height="40px" alt="Imagem" onclick="toggleCaixa()">
   </div>
 
-  <div id="caixaLinks">
-    <a href="../cliente/frm_altera_cli.php">Alterar Perfil</a>
-  </div>
+  <?php
+  if($_SESSION['user']=='comum')
+  echo '<div id="caixaLinks">';
+    echo '<a href="../cliente/frm_altera_cli.php">Alterar Perfil</a>';
+  echo '</div>';
 
+  if($_SESSION['user']=='adm')
+  echo '<div id="caixaLinks">';
+    echo '<a href="../adm/frm_altera_adm.php">Alterar Perfil</a>';
+  echo '</div>';
+  ?>
 </div>
 </body>
 
