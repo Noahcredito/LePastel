@@ -12,7 +12,7 @@ body {margin:0;}
 .imagem1{
   position: absolute;
   top: 5%;
-  left: 330px;
+  left: 20%;
 }
 
 .imagem1 img{
@@ -31,7 +31,7 @@ body {margin:0;}
 .imagem2{
   position: absolute;
   top: 5%;
-  left: 630px;
+  left: 40%;
 }
 
 .imagem2 img{
@@ -50,7 +50,7 @@ body {margin:0;}
 .imagem3{
   position: absolute;
   top: 5%;
-  left: 930px;
+  left: 60%;
 }
 
 .imagem3 img{
@@ -68,11 +68,12 @@ body {margin:0;}
 .imagem4{
   position: absolute;
   top: 5%;
-  left: 1230px;
+  left: 80%;
 }
 
 .imagem4 img{
   border-radius: 10%;
+  margin-right: 15%;
 }
 
 .texto4{
@@ -86,8 +87,8 @@ body {margin:0;}
 
 .imagem5{
   position: absolute;
-  top: 50%;
-  left: 330px;
+  top: 65%;
+  left: 20%;
 }
 
 .imagem5 img{
@@ -121,7 +122,7 @@ a:active {
 <?php require '../barra_lateral_pasta.php'?>
 
   <div class="imagem1">
-    <img src = "../imagens/doce_de_leite.png" width="250px" height="250px">
+    <img src = "../imagens/doce_de_leite.png" width="220px" height="220px">
     <div class="texto1">
     <a href="pastel_doce_de_leite.php">DOCE<br>DE LEITE</a>
     <p>P R$8,00<br>
@@ -130,7 +131,7 @@ a:active {
   </div>
 
   <div class="imagem2">
-    <img src = "../imagens/chocolate.png" width="250px" height="250px">
+    <img src = "../imagens/chocolate.png" width="220px" height="220px">
     <div class="texto2">
     <a href="pastel_chocolate.php">CHOCOLATE</a>
     <p>P R$9,00<br>
@@ -139,7 +140,7 @@ a:active {
   </div>
 
   <div class="imagem3">
-    <img src = "../imagens/romeu_e_julieta.png" width="250px" height="250px">
+    <img src = "../imagens/romeu_e_julieta.png" width="220px" height="220px">
     <div class="texto3">
     <a href="pastel_romeu_e_julieta.php">ROMEU<br>E JULIETA</a>
     <p>P R$10,00<br>
@@ -148,7 +149,7 @@ a:active {
   </div>
   
   <div class="imagem4">
-    <img src = "../imagens/shot.png" width="250px" height="250px">
+    <img src = "../imagens/shot.png" width="220px" height="220px">
     <div class="texto4">
     <a href="pastel_shot.php">SHOT</a>
     <p>P R$10,00<br>
@@ -157,7 +158,7 @@ a:active {
   </div>
 
   <div class="imagem5">
-    <img src = "../imagens/chocobis.png" width="250px" height="250px">
+    <img src = "../imagens/chocobis.png" width="220px" height="220px">
     <div class="texto5">
     <a href="pastel_chocobis.php">CHOCOBIS</a>
     <p>P R$11,00<br>

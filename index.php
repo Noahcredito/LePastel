@@ -39,7 +39,7 @@ session_start();
       padding: 0.1px;
       margin: 0 auto;
       position: absolute;
-      top: 50%;
+      top: 47%;
       transform: translateY(-50%);
       left: 18%;
       font-family: Alice;
@@ -48,16 +48,16 @@ session_start();
     .imagem1 {
       padding: 0.1px;
       position: absolute;
-      top: 38%;
+      top: 35%;
       transform: translateY(-50%);
-      left: 61%;
+      left: 60%;
     }
     .imagem2 {
       padding: 0.1px;
       position: absolute;
-      top: 64%;
+      top: 66%;
       transform: translateY(-50%);
-      left: 65%;
+      left: 64%;
     }
 </style>
 </head>
@@ -102,11 +102,11 @@ echo "</div>";
   </div>
 
   <div class="imagem1">
-    <img src="imagens/foto1_inicio.jpeg" width="550px" height="320px">
+    <img src="imagens/foto1_inicio.jpeg" width="470px" height="280px">
   </div>
 
   <div class="imagem2">
-    <img src="imagens/foto2_inicio.jpeg" width="550px" height="320px">
+    <img src="imagens/foto2_inicio.jpeg" width="470px" height="280px">
   </div>
 </body>
 
