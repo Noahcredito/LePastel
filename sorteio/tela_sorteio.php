@@ -160,6 +160,10 @@ body {
             location.reload();
         });
 
+        document.getElementById('btnSorteio').addEventListener('click', function() {
+            location.reload();
+        });
+
         document.getElementById('btnListar').addEventListener('click', function() {
             window.location.assign("lista_sort.php");
         });
