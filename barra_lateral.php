@@ -14,6 +14,7 @@ body {margin:0;}
 }
 
 #botaoCadastrar{
+  position: absolute;
   background-color: #FFCE08;
   color: #000000;
   border: none;
@@ -21,9 +22,12 @@ body {margin:0;}
   padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
+  top: 32%;
+  left: 28%;
 }
 
 #botaoLogin{
+  position: absolute;
   background-color: #FFCE08;
   color: #000000;
   border: none;
@@ -31,6 +35,8 @@ body {margin:0;}
   padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
+  top: 38%;
+  left: 28.7%;
 }
 
 .btn:hover {
@@ -129,10 +135,11 @@ label span:nth-child(3){
     text-align: center;
     position: fixed;
     left: -280px;
-    width: 217px;
+    width: 230.8px;
     height: 165px;
     transition: left 0.3s;
     z-index: 1;
+    top: 52.5%;
 }
 
 #menu ul {
@@ -161,8 +168,8 @@ label span:nth-child(3){
     padding: 10px;
     z-index: 1;
     cursor: pointer;
-    top: 82%;
-    left: 30%;
+    top: 82.5%;
+    left: 27%;
 }
 
 #caixaLinks a{
