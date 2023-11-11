@@ -118,7 +118,7 @@
     z-index: 1;
     cursor: pointer;
     top: 82.5%;
-    left: 26.5%;
+    left: 30%;
 }
 
 #caixaLinks a{

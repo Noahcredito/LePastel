@@ -37,14 +37,14 @@ body {margin:0;}
 <body style="background-color:#FFE780">
 <?php require '../barra_lateral_pasta.php'?>
   <div class="imagem-pastel">
-    <img src = "../imagens/file_ao_alho.png" width="45%" height="45%">
+    <img src = "../imagens/brocolis.png" width="45%" height="45%">
   </div>
 
   <div class="texto">
-    <p>Pastel de Filé ao Alho<br>
-    P R$13,00<br>
-    G R$16,00<br><br>
-    Ingredientes: Filé e Alho frito</p>
+    <p>Pastel de Brócolis <br>
+    P R$15,00<br>
+    G R$18,00<br><br>
+    Ingredientes: Brócolis, Queijo, Cream Cheese e Bacon</p>
   </div>
 </body>
 
