@@ -4,16 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <style>
-body {margin:0;}
 .navbar{
   background-color: #000000;
   position: fixed;
   top: 0;
-  width: 17%;
+  width: 17.2%;
   height: 100%;
 }
 
 #botaoCadastrar{
+  position: absolute;
   background-color: #FFCE08;
   color: #000000;
   border: none;
@@ -21,9 +21,12 @@ body {margin:0;}
   padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
+  top: 32%;
+  left: 28%;
 }
 
 #botaoLogin{
+  position: absolute;
   background-color: #FFCE08;
   color: #000000;
   border: none;
@@ -31,6 +34,8 @@ body {margin:0;}
   padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
+  top: 38%;
+  left: 28.7%;
 }
 
 .btn:hover {
@@ -59,56 +64,6 @@ body {margin:0;}
   justify-content: center;
 }
 
-/*#checkbox-menu{
-  position: absolute;
-  opacity: 0;
-}
-
-label{
-  cursor: pointer;
-  position: relative;
-  display: block;
-  height: 15%;
-  width: 55%;
-  left: 22.5%;
-}
-
-label span{
-  position: absolute;
-  display: block;
-  height: 5px;
-  width: 100%;
-  border-radius: 30px;
-  background: #FFCE08;
-  transition: 0.25s ease-in-out;
-}
-
-label span:nth-child(1){
-  top: 0;
-}
-
-label span:nth-child(2){
-  top: 9px;
-}
-
-label span:nth-child(3){
-  top: 18px;
-}
-
-#checkbox-menu:checked + label span:nth-child(1){
-  transform: rotate(-45deg);
-  top: 8px;
-}
-
-#checkbox-menu:checked + label span:nth-child(2){
-  opacity: 0;
-}
-
-#checkbox-menu:checked + label span:nth-child(3){
-  transform: rotate(45deg);
-  top: 8px;
-}*/
-
 #menu-toggle {
     display: none;
 }
@@ -117,7 +72,7 @@ label span:nth-child(3){
     font-size: 35px;
     cursor: pointer;
     position: fixed;
-    top: 32%;
+    top: 45%;
     left: 7.5%;
     z-index: 2;
     color: #FFCE08;
@@ -129,10 +84,11 @@ label span:nth-child(3){
     text-align: center;
     position: fixed;
     left: -280px;
-    width: 271.5px;
+    width: 230.8px;
     height: 165px;
     transition: left 0.3s;
     z-index: 1;
+    top: 52.5%;
 }
 
 #menu ul {
@@ -142,7 +98,7 @@ label span:nth-child(3){
 }
 
 #menu ul li {
-    padding: 15px;
+    padding: 8px;
 }
 
 #menu ul li a {
@@ -161,8 +117,8 @@ label span:nth-child(3){
     padding: 10px;
     z-index: 1;
     cursor: pointer;
-    top: 84%;
-    left: 30%;
+    top: 82.5%;
+    left: 26.5%;
 }
 
 #caixaLinks a{
@@ -209,6 +165,7 @@ echo"<div class='navbar'>";
             <li><a href="../pasteisSalgados/tela_salgados.php">Pastéis Salgados</a></li>
             <li><a href="../pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
             <li><a href="../tela_bebidas.php">Bebidas</a></li>
+            <li><a href="../sorteio/tela_sorteio.php">Sorteio</a></li>
         </ul>
     </div>
   </div>

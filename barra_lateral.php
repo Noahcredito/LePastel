@@ -36,7 +36,7 @@ body {margin:0;}
   font-size: 16px;
   cursor: pointer;
   top: 38%;
-  left: 28.7%;
+  left: 28.8%;
 }
 
 .btn:hover {
@@ -64,56 +64,6 @@ body {margin:0;}
   align-items: center;
   justify-content: center;
 }
-
-/*#checkbox-menu{
-  position: absolute;
-  opacity: 0;
-}
-
-label{
-  cursor: pointer;
-  position: relative;
-  display: block;
-  height: 15%;
-  width: 55%;
-  left: 22.5%;
-}
-
-label span{
-  position: absolute;
-  display: block;
-  height: 5px;
-  width: 100%;
-  border-radius: 30px;
-  background: #FFCE08;
-  transition: 0.25s ease-in-out;
-}
-
-label span:nth-child(1){
-  top: 0;
-}
-
-label span:nth-child(2){
-  top: 9px;
-}
-
-label span:nth-child(3){
-  top: 18px;
-}
-
-#checkbox-menu:checked + label span:nth-child(1){
-  transform: rotate(-45deg);
-  top: 8px;
-}
-
-#checkbox-menu:checked + label span:nth-child(2){
-  opacity: 0;
-}
-
-#checkbox-menu:checked + label span:nth-child(3){
-  transform: rotate(45deg);
-  top: 8px;
-}*/
 
 #menu-toggle {
     display: none;
@@ -149,7 +99,7 @@ label span:nth-child(3){
 }
 
 #menu ul li {
-    padding: 15px;
+    padding: 8px;
 }
 
 #menu ul li a {
@@ -169,7 +119,7 @@ label span:nth-child(3){
     z-index: 1;
     cursor: pointer;
     top: 82.5%;
-    left: 27%;
+    left: 26.5%;
 }
 
 #caixaLinks a{
@@ -216,6 +166,7 @@ echo"<a href='index.php'>
             <li><a href="pasteisSalgados/tela_salgados.php">Pastéis Salgados</a></li>
             <li><a href="pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
             <li><a href="tela_bebidas.php">Bebidas</a></li>
+            <li><a href="sorteio/tela_sorteio.php">Sorteio</a></li>
         </ul>
     </div>
 

@@ -13,10 +13,10 @@ body {margin:0;}
 .imagem1{
   position: absolute;
   top: 5%;
-  left: 17.1%;
+  left: 20%;
 }
 .imagem1 img{
-  border-radius: 5%;
+  border-radius: 10%;
 }
 .texto1{
   position: absolute;
@@ -29,7 +29,7 @@ body {margin:0;}
 .imagem2{
   position: absolute;
   top: 5%;
-  left: 630px;
+  left: 40%;
 }
 .imagem2 img{
   border-radius: 10%;
@@ -45,7 +45,7 @@ body {margin:0;}
 .imagem3{
   position: absolute;
   top: 5%;
-  left: 930px;
+  left: 60%;
 }
 .imagem3 img{
   border-radius: 10%;
@@ -61,10 +61,11 @@ body {margin:0;}
 .imagem4{
   position: absolute;
   top: 5%;
-  left: 1230px;
+  left: 80%;
 }
 .imagem4 img{
   border-radius: 10%;
+  margin-right: 15%;
 }
 .texto4{
   position: absolute;
@@ -76,8 +77,8 @@ body {margin:0;}
 }
 .imagem5{
   position: absolute;
-  top: 50%;
-  left: 17.1%;
+  top: 65%;
+  left: 20%;
 }
 .imagem5 img{
   border-radius: 10%;
@@ -92,8 +93,8 @@ body {margin:0;}
 }
 .imagem6{
   position: absolute;
-  top: 50%;
-  left: 630px;
+  top: 65%;
+  left: 40%;
 }
 .imagem6 img{
   border-radius: 10%;
@@ -108,8 +109,8 @@ body {margin:0;}
 }
 .imagem7{
   position: absolute;
-  top: 50%;
-  left: 930px;
+  top: 65%;
+  left: 60%;
 }
 .imagem7 img{
   border-radius: 10%;
@@ -124,8 +125,8 @@ body {margin:0;}
 }
 .imagem8{
   position: absolute;
-  top: 50%;
-  left: 1230px;
+  top: 65%;
+  left: 80%;
 }
 .imagem8 img{
   border-radius: 10%;
@@ -140,8 +141,8 @@ body {margin:0;}
 }
 .imagem9{
   position: absolute;
-  top: 95%;
-  left: 17.1%;
+  top: 125%;
+  left: 20%;
 }
 .imagem9 img{
   border-radius: 10%;
@@ -156,15 +157,15 @@ body {margin:0;}
 }
 .texto{
   position: absolute;
-  top: 135%;
-  left: 17.1%;
+  top: 185%;
+  left: 20%;
   font-family: Alice;
   color: #000000;
 }
 .imagem10{
   position: absolute;
-  top: 140%;
-  left: 17.1%;
+  top: 193%;
+  left: 20%;
 }
 .imagem10 img{
   border-radius: 10%;
@@ -179,8 +180,8 @@ body {margin:0;}
 }
 .imagem11{
   position: absolute;
-  top: 140%;
-  left: 34.2%;
+  top: 193%;
+  left: 40%;
 }
 .imagem11 img{
   border-radius: 10%;
@@ -211,7 +212,7 @@ a:active {
 <?php require 'barra_lateral.php'?>
 
 <div class="imagem1">
-    <img src = "imagens/agua_com_gas.png" width="250px" height="250px">
+    <img src = "imagens/agua_com_gas.png" width="220px" height="220px">
     <div class="texto1">
     <p>ÁGUA COM GÁS<br>
     R$4,00</p>
@@ -219,7 +220,7 @@ a:active {
   </div>
 
   <div class="imagem2">
-    <img src = "imagens/coca_cola_lata.png" width="250px" height="250px">
+    <img src = "imagens/coca_cola_lata.png" width="220px" height="220px">
     <div class="texto2">
     <p>COCA COLA LATA<br>
     R$5,00</p>
@@ -227,7 +228,7 @@ a:active {
   </div>
 
   <div class="imagem3">
-    <img src = "imagens/limoneto.png" width="250px" height="250px">
+    <img src = "imagens/limoneto.png" width="220px" height="220px">
     <div class="texto3">
     <p>LIMONETO<br>
     R$6,00</p>
@@ -235,7 +236,7 @@ a:active {
   </div>
   
   <div class="imagem4">
-    <img src = "imagens/coca_cola_600ml.png" width="250px" height="250px">
+    <img src = "imagens/coca_cola_600ml.png" width="220px" height="220px">
     <div class="texto4">
     <p>COCA COLA 600ml<br>
     R$6,00</p>
@@ -243,7 +244,7 @@ a:active {
   </div>
 
   <div class="imagem5">
-    <img src = "imagens/guarana_1litro.png" width="250px" height="250px">
+    <img src = "imagens/guarana_1litro.png" width="220px" height="220px">
     <div class="texto5">
     <p>GUARANÁ 1lt<br>
     R$6,00</p>
@@ -251,7 +252,7 @@ a:active {
   </div>
 
   <div class="imagem6">
-    <img src = "imagens/guarana_2litros.png" width="250px" height="250px">
+    <img src = "imagens/guarana_2litros.png" width="220px" height="220px">
     <div class="texto6">
     <p>GUARANÁ 2lt<br>
     R$9,00</p>
@@ -259,7 +260,7 @@ a:active {
   </div>
 
   <div class="imagem7">
-    <img src = "imagens/roller_2litros.png" width="250px" height="250px">
+    <img src = "imagens/roller_2litros.png" width="220px" height="220px">
     <div class="texto7">
     <p>ROLLER 2lt<br>
     R$10,00</p>
@@ -267,7 +268,7 @@ a:active {
   </div>
 
   <div class="imagem8">
-    <img src = "imagens/coca_cola_1litro.png" width="250px" height="250px">
+    <img src = "imagens/coca_cola_1litro.png" width="220px" height="220px">
     <div class="texto8">
     <p>COCA COLA 1lt<br>
     R$8,00</p>
@@ -275,7 +276,7 @@ a:active {
   </div>
 
   <div class="imagem9">
-    <img src = "imagens/coca_cola_2litros.png" width="250px" height="250px">
+    <img src = "imagens/coca_cola_2litros.png" width="220px" height="220px">
     <div class="texto9">
     <p>COCA COLA 2lt<br>
     R$14,00</p>
@@ -287,7 +288,7 @@ a:active {
   </div>
 
   <div class="imagem10">
-    <img src = "imagens/suco_de_laranja_500ml.png" width="250px" height="250px">
+    <img src = "imagens/suco_de_laranja_500ml.png" width="220px" height="220px">
     <div class="texto10">
     <p>SUCO DE LARANJA 500ml<br>
     R$7,00</p>
@@ -295,7 +296,7 @@ a:active {
   </div>
 
   <div class="imagem11">
-    <img src = "imagens/suco_de_laranja_1litro.png" width="250px" height="250px">
+    <img src = "imagens/suco_de_laranja_1litro.png" width="220px" height="220px">
     <div class="texto11">
     <p>SUCO DE LARANJA 1lt<br>
     R$12,00</p>

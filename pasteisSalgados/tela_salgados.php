@@ -12,23 +12,23 @@ body {margin:0;}
 .imagem1{
   position: absolute;
   top: 5%;
-  left: 17.1%;
+  left: 20%;
 }
 .imagem1 img{
-  border-radius: 5%;
+  border-radius: 10%;
 }
 .texto1{
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 32%;
   text-align: center;
   color: #000000;
 }
 .imagem2{
   position: absolute;
   top: 5%;
-  left: 630px;
+  left: 40%;
 }
 .imagem2 img{
   border-radius: 10%;
@@ -37,15 +37,14 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 4%;
   text-align: center;
   color: #000000;
-  
 }
 .imagem3{
   position: absolute;
   top: 5%;
-  left: 930px;
+  left: 60%;
 }
 .imagem3 img{
   border-radius: 10%;
@@ -54,30 +53,31 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 23%;
   text-align: center;
   color: #000000;
 }
 .imagem4{
   position: absolute;
   top: 5%;
-  left: 1230px;
+  left: 80%;
 }
 .imagem4 img{
   border-radius: 10%;
+  margin-right: 15%;
 }
 .texto4{
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 30%;
   text-align: center;
   color: #000000;
 }
 .imagem5{
   position: absolute;
-  top: 50%;
-  left: 17.1%;
+  top: 60%;
+  left: 20%;
 }
 .imagem5 img{
   border-radius: 10%;
@@ -86,14 +86,14 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 31%;
   text-align: center;
   color: #000000;
 }
 .imagem6{
   position: absolute;
-  top: 50%;
-  left: 630px;
+  top: 60%;
+  left: 40%;
 }
 .imagem6 img{
   border-radius: 10%;
@@ -102,14 +102,14 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 0%;
   text-align: center;
   color: #000000;
 }
 .imagem7{
   position: absolute;
-  top: 50%;
-  left: 930px;
+  top: 60%;
+  left: 60%;
 }
 .imagem7 img{
   border-radius: 10%;
@@ -118,14 +118,14 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 6%;
   text-align: center;
   color: #000000;
 }
 .imagem8{
   position: absolute;
-  top: 50%;
-  left: 1230px;
+  top: 60%;
+  left: 80%;
 }
 .imagem8 img{
   border-radius: 10%;
@@ -134,14 +134,14 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 30%;
   text-align: center;
   color: #000000;
 }
 .imagem9{
   position: absolute;
-  top: 95%;
-  left: 17.1%;
+  top: 120%;
+  left: 20%;
 }
 .imagem9 img{
   border-radius: 10%;
@@ -156,8 +156,8 @@ body {margin:0;}
 }
 .imagem10{
   position: absolute;
-  top: 95%;
-  left: 630px;
+  top: 120%;
+  left: 40%;
 }
 .imagem10 img{
   border-radius: 10%;
@@ -172,8 +172,8 @@ body {margin:0;}
 }
 .imagem11{
   position: absolute;
-  top: 95%;
-  left: 930px;
+  top: 120%;
+  left: 60%;
 }
 .imagem11 img{
   border-radius: 10%;
@@ -188,8 +188,8 @@ body {margin:0;}
 }
 .imagem12{
   position: absolute;
-  top: 95%;
-  left: 1230px;
+  top: 120%;
+  left: 80%;
 }
 .imagem12 img{
   border-radius: 10%;
@@ -204,8 +204,8 @@ body {margin:0;}
 }
 .imagem13{
   position: absolute;
-  top: 140%;
-  left: 17.1%;
+  top: 180%;
+  left: 20%;
 }
 .imagem13 img{
   border-radius: 10%;
@@ -220,8 +220,8 @@ body {margin:0;}
 }
 .imagem14{
   position: absolute;
-  top: 140%;
-  left: 630px;
+  top: 180%;
+  left: 40%;
 }
 .imagem14 img{
   border-radius: 10%;
@@ -236,8 +236,8 @@ body {margin:0;}
 }
 .imagem15{
   position: absolute;
-  top: 140%;
-  left: 930px;
+  top: 180%;
+  left: 60%;
 }
 .imagem15 img{
   border-radius: 10%;
@@ -252,8 +252,8 @@ body {margin:0;}
 }
 .imagem16{
   position: absolute;
-  top: 140%;
-  left: 1230px;
+  top: 180%;
+  left: 80%;
 }
 .imagem16 img{
   border-radius: 10%;
@@ -268,8 +268,8 @@ body {margin:0;}
 }
 .imagem17{
   position: absolute;
-  top: 185%;
-  left: 17.1%;
+  top: 240%;
+  left: 20%;
 }
 .imagem17 img{
   border-radius: 10%;
@@ -278,14 +278,14 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 30%;
   text-align: center;
   color: #000000;
 }
 .imagem18{
   position: absolute;
-  top: 185%;
-  left: 630px;
+  top: 240%;
+  left: 40%;
 }
 .imagem18 img{
   border-radius: 10%;
@@ -300,8 +300,8 @@ body {margin:0;}
 }
 .imagem19{
   position: absolute;
-  top: 185%;
-  left: 930px;
+  top: 240%;
+  left: 60%;
 }
 .imagem19 img{
   border-radius: 10%;
@@ -316,8 +316,8 @@ body {margin:0;}
 }
 .imagem20{
   position: absolute;
-  top: 185%;
-  left: 1230px;
+  top: 240%;
+  left: 80%;
 }
 .imagem20 img{
   border-radius: 10%;
@@ -332,8 +332,8 @@ body {margin:0;}
 }
 .imagem21{
   position: absolute;
-  top: 230%;
-  left: 17.1%;
+  top: 300%;
+  left: 20%;
 }
 .imagem21 img{
   border-radius: 10%;
@@ -348,8 +348,8 @@ body {margin:0;}
 }
 .imagem22{
   position: absolute;
-  top: 230%;
-  left: 630px;
+  top: 300%;
+  left: 40%;
 }
 .imagem22 img{
   border-radius: 10%;
@@ -364,15 +364,15 @@ body {margin:0;}
 }
 .texto{
   position: absolute;
-  top: 270%;
-  left: 17.1%;
+  top: 360%;
+  left: 20%;
   font-family: Alice;
   color: #000000;
 }
 .imagem23{
   position: absolute;
-  top: 275%;
-  left: 17.1%;
+  top: 368%;
+  left: 20%;
 }
 .imagem23 img{
   border-radius: 10%;
@@ -387,8 +387,8 @@ body {margin:0;}
 }
 .imagem24{
   position: absolute;
-  top: 275%;
-  left: 630px;
+  top: 368%;
+  left: 40%;
 }
 .imagem24 img{
   border-radius: 10%;
@@ -403,8 +403,8 @@ body {margin:0;}
 }
 .imagem25{
   position: absolute;
-  top: 275%;
-  left: 930px;
+  top: 368%;
+  left: 60%;
 }
 .imagem25 img{
   border-radius: 10%;
@@ -419,8 +419,8 @@ body {margin:0;}
 }
 .imagem26{
   position: absolute;
-  top: 275%;
-  left: 1230px;
+  top: 368%;
+  left: 80%;
 }
 .imagem26 img{
   border-radius: 10%;
@@ -435,8 +435,8 @@ body {margin:0;}
 }
 .imagem27{
   position: absolute;
-  top: 320%;
-  left: 17.1%;
+  top: 428%;
+  left: 20%;
 }
 .imagem27 img{
   border-radius: 10%;
@@ -472,7 +472,7 @@ a:active {
 <?php require '../barra_lateral_pasta.php'?>
 
   <div class="imagem1">
-    <img src = "../imagens/vento.png" width="250px" height="250px">
+    <img src = "../imagens/vento.png" width="220px" height="220px">
     <div class="texto1">
     <a href="pastel_vento.php">VENTO</a>
     <p>P R$5,00<br>
@@ -481,7 +481,7 @@ a:active {
   </div>
 
   <div class="imagem2">
-    <img src = "../imagens/lombo.png" width="250px" height="250px">
+    <img src = "../imagens/lombo.png" width="220px" height="220px">
     <div class="texto2">
     <a href="pastel_lombo.php">LOMBO CANADENSE</a>
     <p>P R$8,00<br>
@@ -490,7 +490,7 @@ a:active {
   </div>
 
   <div class="imagem3">
-    <img src = "../imagens/calabresa.png" width="250px" height="250px">
+    <img src = "../imagens/calabresa.png" width="220px" height="220px">
     <div class="texto3">
     <a href="pastel_calabresa.php">CALABRESA</a>
     <p>P R$8,00<br>
@@ -499,7 +499,7 @@ a:active {
   </div>
   
   <div class="imagem4">
-    <img src = "../imagens/frango.png" width="250px" height="250px">
+    <img src = "../imagens/frango.png" width="220px" height="220px">
     <div class="texto4">
     <a href="pastel_frango.php">FRANGO</a>
     <p>P R$8,00<br>
@@ -508,7 +508,7 @@ a:active {
   </div>
 
   <div class="imagem5">
-    <img src = "../imagens/carne.png" width="250px" height="250px">
+    <img src = "../imagens/carne.png" width="220px" height="220px">
     <div class="texto5">
     <a href="pastel_carne.php">CARNE</a>
     <p>P R$9,00<br>
@@ -517,25 +517,25 @@ a:active {
   </div>
 
   <div class="imagem6">
-    <img src = "../imagens/carne_com_azeitona.png" width="250px" height="250px">
+    <img src = "../imagens/carne_com_azeitona.png" width="220px" height="220px">
     <div class="texto6">
-    <p>Vento<br>
-    P R$5,00<br>
+    <a href="pastel_carne_com_azeitona.php">CARNE COM AZEITONA</a>
+    <p>P R$5,00<br>
     G R$7,00</p>
     </div>
   </div>
 
   <div class="imagem7">
-    <img src = "../imagens/carne_com_queijo.png" width="250px" height="250px">
+    <img src = "../imagens/carne_com_queijo.png" width="220px" height="220px">
     <div class="texto7">
-    <p>Vento<br>
-    P R$5,00<br>
+    <a href="pastel_carne_com_queijo.php">CARNE COM QUEIJO</a>
+    <p>P R$5,00<br>
     G R$7,00</p>
     </div>
   </div>
 
   <div class="imagem8">
-    <img src = "../imagens/misto.png" width="250px" height="250px">
+    <img src = "../imagens/misto.png" width="220px" height="220px">
     <div class="texto8">
     <a href="pastel_misto.php">MISTO</a>
     <p>P R$11,00<br>
@@ -544,7 +544,7 @@ a:active {
   </div>
 
   <div class="imagem9">
-    <img src = "../imagens/pizza.png" width="250px" height="250px">
+    <img src = "../imagens/pizza.png" width="220px" height="220px">
     <div class="texto9">
     <a href="pastel_pizza.php">PIZZA</a>
     <p>P R$11,00<br>
@@ -553,7 +553,7 @@ a:active {
   </div>
 
   <div class="imagem10">
-    <img src = "../imagens/frango_a_moda.png" width="250px" height="250px">
+    <img src = "../imagens/frango_a_moda.png" width="220px" height="220px">
     <div class="texto10">
     <a href="pastel_frango_a_moda.php">FRANGO<br>À MODA</a>
     <p>P R$13,00<br>
@@ -562,7 +562,7 @@ a:active {
   </div>
 
   <div class="imagem11">
-    <img src = "../imagens/file_ao_alho.png" width="250px" height="250px">
+    <img src = "../imagens/file_ao_alho.png" width="220px" height="220px">
     <div class="texto11">
     <a href="pastel_file_ao_alho.php">FILÉ<br>AO ALHO</a>
     <p>P R$13,00<br>
@@ -571,7 +571,7 @@ a:active {
   </div>
 
   <div class="imagem12">
-    <img src = "../imagens/dog_misto.png" width="250px" height="250px">
+    <img src = "../imagens/dog_misto.png" width="220px" height="220px">
     <div class="texto12">
     <a href="pastel_dog_misto.php">DOG<br>MISTO</a>
     <p>P R$14,00<br>
@@ -580,7 +580,7 @@ a:active {
   </div>
 
   <div class="imagem13">
-    <img src = "../imagens/calabresa_especial.png" width="250px" height="250px">
+    <img src = "../imagens/calabresa_especial.png" width="220px" height="220px">
     <div class="texto13">
     <a href="pastel_calabresa_especial.php">CALABRESA<br>ESPECIAL</a>
     <p>P R$14,00<br>
@@ -589,7 +589,7 @@ a:active {
   </div>
 
   <div class="imagem14">
-    <img src = "../imagens/paulista.png" width="250px" height="250px">
+    <img src = "../imagens/paulista.png" width="220px" height="220px">
     <div class="texto14">
     <a href="pastel_paulista.php">PAULISTA</a>
     <p>P R$14,00<br>
@@ -598,7 +598,7 @@ a:active {
   </div>
 
   <div class="imagem15">
-    <img src = "../imagens/a_portuguesa.png" width="250px" height="250px">
+    <img src = "../imagens/a_portuguesa.png" width="220px" height="220px">
     <div class="texto15">
     <a href="pastel_a_portugesa.php">A PORTUGUESA</a>
     <p>P R$15,00<br>
@@ -607,7 +607,7 @@ a:active {
   </div>
 
   <div class="imagem16">
-    <img src = "../imagens/misto_especial.png" width="250px" height="250px">
+    <img src = "../imagens/misto_especial.png" width="220px" height="220px">
     <div class="texto16">
     <a href="pastel_misto_especial.php">MISTO<br>ESPECIAL</a>
     <p>P R$15,00<br>
@@ -616,7 +616,7 @@ a:active {
   </div>
 
   <div class="imagem17">
-    <img src = "../imagens/frango_especial.png" width="250px" height="250px">
+    <img src = "../imagens/frango_especial.png" width="220px" height="220px">
     <div class="texto17">
     <a href="pastel_frango_especial.php">FRANGO<br>ESPECIAL</a>
     <p>P R$16,00<br>
@@ -625,25 +625,25 @@ a:active {
   </div>
 
   <div class="imagem18">
-    <img src = "../imagens/frango_queijo_azeitona_catupiry.png" width="250px" height="250px">
+    <img src = "../imagens/dog_especial.png" width="220px" height="220px">
     <div class="texto18">
-    <p>Vento<br>
-    P R$5,00<br>
+    <a href="pastel_dog_especial.php">DOG<br>ESPECIAL</a>
+    <p>P R$5,00<br>
     G R$7,00</p>
     </div>
   </div>
 
   <div class="imagem19">
-    <img src = "../imagens/dog_especial.png" width="250px" height="250px">
+    <img src = "../imagens/frango_queijo_azeitona_catupiry.png" width="220px" height="220px">
     <div class="texto19">
-    <a href="pastel_dog_especial.php">DOG<br>ESPECIAL</a>
+    <a href="pastel_frango_queijo_azeitona_catupiry.php">FRANGO COM QUEIJO AZEITONA E CATUPIRY</a>
     <p>P R$17,00<br>
     G R$20,00</p>
     </div>
   </div>
 
   <div class="imagem20">
-    <img src = "../imagens/file_especial.png" width="250px" height="250px">
+    <img src = "../imagens/file_especial.png" width="220px" height="220px">
     <div class="texto20">
     <a href="pastel_file_especial.php">FILÉ<br>ESPECIAL</a>
     <p>P R$17,00<br>
@@ -652,7 +652,7 @@ a:active {
   </div>
 
   <div class="imagem21">
-    <img src = "../imagens/file_ao_alho_catupiry.png" width="250px" height="250px">
+    <img src = "../imagens/file_ao_alho_catupiry.png" width="220px" height="220px">
     <div class="texto21">
     <p>Vento<br>
     P R$13,00<br>
@@ -661,7 +661,7 @@ a:active {
   </div>
 
   <div class="imagem22">
-    <img src = "../imagens/brocolis.png" width="250px" height="250px">
+    <img src = "../imagens/brocolis.png" width="220px" height="220px">
     <div class="texto22">
     <p>Vento<br>
     P R$5,00<br>
@@ -674,7 +674,7 @@ a:active {
   </div>
 
   <div class="imagem23">
-    <img src = "../imagens/queijo.png" width="250px" height="250px">
+    <img src = "../imagens/queijo.png" width="220px" height="220px">
     <div class="texto23">
     <a href="pastel_queijo.php">QUEIJO</a>
     <p>P R$9,00<br>
@@ -683,7 +683,7 @@ a:active {
   </div>
 
   <div class="imagem24">
-    <img src = "../imagens/palmito_cremoso.png" width="250px" height="250px">
+    <img src = "../imagens/palmito_cremoso.png" width="220px" height="220px">
     <div class="texto24">
     <a href="pastel_palmito_cremoso.php">PALMITO<br>CREMOSO</a>
     <p>P R$9,00<br>
@@ -692,7 +692,7 @@ a:active {
   </div>
 
   <div class="imagem25">
-    <img src = "../imagens/brocolis_com_queijo.png" width="250px" height="250px">
+    <img src = "../imagens/brocolis_com_queijo.png" width="220px" height="220px">
     <div class="texto25">
     <a href="pastel_brocolis_com_queijo.php">BRÓCOLIS<br>COM QUEIJO</a>
     <p>P R$10,00<br>
@@ -701,7 +701,7 @@ a:active {
   </div>
 
   <div class="imagem26">
-    <img src = "../imagens/vegetariano.png" width="250px" height="250px">
+    <img src = "../imagens/vegetariano.png" width="220px" height="220px">
     <div class="texto26">
     <a href="pastel_vegetariano.php">VEGETARIANO</a>
     <p>P R$15,00<br>
@@ -710,7 +710,7 @@ a:active {
   </div>
 
   <div class="imagem27">
-    <img src = "../imagens/4_queijos.png" width="250px" height="250px">
+    <img src = "../imagens/4_queijos.png" width="220px" height="220px">
     <div class="texto27">
     <a href="pastel_4_queijos.php">4 QUEIJOS</a>
     <p>P R$18,00<br>
