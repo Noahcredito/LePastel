@@ -150,7 +150,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 30%;
   text-align: center;
   color: #000000;
 }
@@ -166,7 +166,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 11%;
   text-align: center;
   color: #000000;
 }
@@ -182,7 +182,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 19%;
   text-align: center;
   color: #000000;
 }
@@ -198,7 +198,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 25%;
   text-align: center;
   color: #000000;
 }
@@ -214,7 +214,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 1%;
   text-align: center;
   color: #000000;
 }
@@ -230,7 +230,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 28%;
   text-align: center;
   color: #000000;
 }
@@ -246,7 +246,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 16%;
   text-align: center;
   color: #000000;
 }
@@ -262,7 +262,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 14%;
   text-align: center;
   color: #000000;
 }
@@ -278,7 +278,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 30%;
+  left: 9%;
   text-align: center;
   color: #000000;
 }
@@ -294,7 +294,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 18%;
   text-align: center;
   color: #000000;
 }
@@ -310,7 +310,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 1%;
   text-align: center;
   color: #000000;
 }
@@ -326,7 +326,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 17%;
   text-align: center;
   color: #000000;
 }
@@ -342,7 +342,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 0%;
   text-align: center;
   color: #000000;
 }
@@ -358,7 +358,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 27%;
   text-align: center;
   color: #000000;
 }
@@ -381,7 +381,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 29%;
   text-align: center;
   color: #000000;
 }
@@ -397,7 +397,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 6%;
   text-align: center;
   color: #000000;
 }
@@ -413,7 +413,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 0%;
   text-align: center;
   color: #000000;
 }
@@ -429,7 +429,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 17%;
   text-align: center;
   color: #000000;
 }
@@ -445,25 +445,21 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 28%;
   text-align: center;
   color: #000000;
 }
-@media screen and (max-width:768px){
-  .imagem1{
-   text-align: center;
-  }
-}
-a:link {
+
+a:link{
   color: #000000;
 }
-a:visited {
+a:visited{
   color: #000000;
 }
-a:hover {
+a:hover{
   color: #000000;
 }
-a:active {
+a:active{
   color: #000000;
 }
 </style>
@@ -555,7 +551,7 @@ a:active {
   <div class="imagem10">
     <img src = "../imagens/frango_a_moda.png" width="220px" height="220px">
     <div class="texto10">
-    <a href="pastel_frango_a_moda.php">FRANGO<br>À MODA</a>
+    <a href="pastel_frango_a_moda.php">FRANGO À MODA</a>
     <p>P R$13,00<br>
     G R$16,00</p>
     </div>
@@ -564,7 +560,7 @@ a:active {
   <div class="imagem11">
     <img src = "../imagens/file_ao_alho.png" width="220px" height="220px">
     <div class="texto11">
-    <a href="pastel_file_ao_alho.php">FILÉ<br>AO ALHO</a>
+    <a href="pastel_file_ao_alho.php">FILÉ AO ALHO</a>
     <p>P R$13,00<br>
     G R$16,00</p>
     </div>
@@ -573,7 +569,7 @@ a:active {
   <div class="imagem12">
     <img src = "../imagens/dog_misto.png" width="220px" height="220px">
     <div class="texto12">
-    <a href="pastel_dog_misto.php">DOG<br>MISTO</a>
+    <a href="pastel_dog_misto.php">DOG MISTO</a>
     <p>P R$14,00<br>
     G R$17,00</p>
     </div>
@@ -582,7 +578,7 @@ a:active {
   <div class="imagem13">
     <img src = "../imagens/calabresa_especial.png" width="220px" height="220px">
     <div class="texto13">
-    <a href="pastel_calabresa_especial.php">CALABRESA<br>ESPECIAL</a>
+    <a href="pastel_calabresa_especial.php">CALABRESA ESPECIAL</a>
     <p>P R$14,00<br>
     G R$17,00</p>
     </div>
@@ -609,7 +605,7 @@ a:active {
   <div class="imagem16">
     <img src = "../imagens/misto_especial.png" width="220px" height="220px">
     <div class="texto16">
-    <a href="pastel_misto_especial.php">MISTO<br>ESPECIAL</a>
+    <a href="pastel_misto_especial.php">MISTO ESPECIAL</a>
     <p>P R$15,00<br>
     G R$18,00</p>
     </div>
@@ -618,7 +614,7 @@ a:active {
   <div class="imagem17">
     <img src = "../imagens/frango_especial.png" width="220px" height="220px">
     <div class="texto17">
-    <a href="pastel_frango_especial.php">FRANGO<br>ESPECIAL</a>
+    <a href="pastel_frango_especial.php">FRANGO ESPECIAL</a>
     <p>P R$16,00<br>
     G R$19,00</p>
     </div>
@@ -627,9 +623,9 @@ a:active {
   <div class="imagem18">
     <img src = "../imagens/dog_especial.png" width="220px" height="220px">
     <div class="texto18">
-    <a href="pastel_dog_especial.php">DOG<br>ESPECIAL</a>
-    <p>P R$5,00<br>
-    G R$7,00</p>
+    <a href="pastel_dog_especial.php">DOG ESPECIAL</a>
+    <p>P R$17,00<br>
+    G R$20,00</p>
     </div>
   </div>
 
@@ -645,7 +641,7 @@ a:active {
   <div class="imagem20">
     <img src = "../imagens/file_especial.png" width="220px" height="220px">
     <div class="texto20">
-    <a href="pastel_file_especial.php">FILÉ<br>ESPECIAL</a>
+    <a href="pastel_file_especial.php">FILÉ ESPECIAL</a>
     <p>P R$17,00<br>
     G R$20,00</p>
     </div>
@@ -654,8 +650,8 @@ a:active {
   <div class="imagem21">
     <img src = "../imagens/file_ao_alho_catupiry.png" width="220px" height="220px">
     <div class="texto21">
-    <p>Vento<br>
-    P R$13,00<br>
+    <a href="pastel_file_ao_alho_catupiry.php">FILÉ AO ALHO COM CATUPIRY</a>
+    <p>P R$13,00<br>
     G R$16,00</p>
     </div>
   </div>
@@ -663,8 +659,8 @@ a:active {
   <div class="imagem22">
     <img src = "../imagens/brocolis.png" width="220px" height="220px">
     <div class="texto22">
-    <p>Vento<br>
-    P R$5,00<br>
+    <a href="pastel_brocolis.php">BRÓCOLIS</a>
+    <p>P R$5,00<br>
     G R$7,00</p>
     </div>
   </div>
@@ -685,7 +681,7 @@ a:active {
   <div class="imagem24">
     <img src = "../imagens/palmito_cremoso.png" width="220px" height="220px">
     <div class="texto24">
-    <a href="pastel_palmito_cremoso.php">PALMITO<br>CREMOSO</a>
+    <a href="pastel_palmito_cremoso.php">PALMITO CREMOSO</a>
     <p>P R$9,00<br>
     G R$12,00</p>
     </div>
@@ -694,7 +690,7 @@ a:active {
   <div class="imagem25">
     <img src = "../imagens/brocolis_com_queijo.png" width="220px" height="220px">
     <div class="texto25">
-    <a href="pastel_brocolis_com_queijo.php">BRÓCOLIS<br>COM QUEIJO</a>
+    <a href="pastel_brocolis_com_queijo.php">BRÓCOLIS COM QUEIJO</a>
     <p>P R$10,00<br>
     G R$13,00</p>
     </div>

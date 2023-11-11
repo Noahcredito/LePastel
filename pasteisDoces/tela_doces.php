@@ -24,7 +24,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 16%;
   text-align: center;
 }
 
@@ -43,7 +43,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 23%;
   text-align: center;
 }
 
@@ -62,7 +62,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 10%;
   text-align: center;
 }
 .imagem4{
@@ -81,7 +81,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 30%;
   text-align: center;
 }
 
@@ -100,7 +100,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 27%;
   text-align: center;
 }
 
@@ -124,7 +124,7 @@ a:active {
   <div class="imagem1">
     <img src = "../imagens/doce_de_leite.png" width="220px" height="220px">
     <div class="texto1">
-    <a href="pastel_doce_de_leite.php">DOCE<br>DE LEITE</a>
+    <a href="pastel_doce_de_leite.php">DOCE DE LEITE</a>
     <p>P R$8,00<br>
     G R$11,00</p>
     </div>
@@ -142,7 +142,7 @@ a:active {
   <div class="imagem3">
     <img src = "../imagens/romeu_e_julieta.png" width="220px" height="220px">
     <div class="texto3">
-    <a href="pastel_romeu_e_julieta.php">ROMEU<br>E JULIETA</a>
+    <a href="pastel_romeu_e_julieta.php">ROMEU E JULIETA</a>
     <p>P R$10,00<br>
     G R$13,00</p>
     </div>

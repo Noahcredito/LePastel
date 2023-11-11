@@ -154,7 +154,34 @@ echo"<a href='index.php'>
            <a href='frm_login.html'>
              <button id='botaoLogin' class='btn'>Fazer Login</button>
            </a>";
+    } else {
+      if ($_SESSION['user'] == 'admin') {
+        echo "<div class='container'>
+
+        <input type='checkbox' id='menu-toggle'>
+        <label for='menu-toggle' id='menu-icon'>&#9776;</label>
+        <div id='menu'>
+            <ul>
+                <li><a href='pasteisSalgados/tela_salgados.php'>Pastéis Salgados</a></li>
+                <li><a href='pasteisDoces/tela_doces.php'>Pastéis Doces</a></li>
+                <li><a href='tela_bebidas.php'>Bebidas</a></li>
+                <li><a href='sorteio/tela_sorteio.php'>Sorteio</a></li>
+            </ul>
+        </div>";
+      } else {
+        echo "<div class='container'>
+
+        <input type='checkbox' id='menu-toggle'>
+        <label for='menu-toggle' id='menu-icon'>&#9776;</label>
+        <div id='menu'>
+            <ul>
+                <li><a href='pasteisSalgados/tela_salgados.php'>Pastéis Salgados</a></li>
+                <li><a href='pasteisDoces/tela_doces.php'>Pastéis Doces</a></li>
+                <li><a href='tela_bebidas.php'>Bebidas</a></li>
+            </ul>
+        </div>";
     };
+  }
 ?>
 
   <div class="container">
@@ -170,27 +197,6 @@ echo"<a href='index.php'>
         </ul>
     </div>
 
-    <!--div class="btn-group dropright">
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Cardápio
-      </button>
-      <div class="dropdown-menu">
-        <a href="tela_salgados.php">Pastéis Salgados</a>
-        <a href="tela_doces.php">Pastéis Doces</a><br>
-        <a href="tela_bebidas.php">Bebidas</a>
-      </div>
-    </div-->
-
-    <!--input type="checkbox" id="checkbox-menu">
-
-    <label for="checkbox-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-      <a href="tela_salgados.php">Pastéis Salgados</a>
-      <a href="tela_doces.php">Pastéis Doces</a>
-      <a href="tela_bebidas.php">Bebidas</a>
-    </label-->
   </div>
 
   <div class="imagem">
@@ -200,10 +206,6 @@ echo"<a href='index.php'>
   <div id="caixaLinks">
     <a href="cliente/frm_altera_cli.php">Alterar Perfil</a>
   </div>
-
-  <!--div class="imagem">
-    <img src = "imagens/engrenagem.png" width="40px" height="40px">
-  </div-->
 </div>
 </body>
 

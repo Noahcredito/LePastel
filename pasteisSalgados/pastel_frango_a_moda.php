@@ -35,9 +35,9 @@ body {margin:0;}
 </style>
 </head>
 <body style="background-color:#FFE780">
-<?php require 'barra_lateral_pasta.php'?>
+<?php require '../barra_lateral_pasta.php'?>
   <div class="imagem-pastel">
-    <img src = "imagens/frango_a_moda.png" width="50%" height="50%">
+    <img src = "../imagens/frango_a_moda.png" width="45%" height="45%">
   </div>
 
   <div class="texto">

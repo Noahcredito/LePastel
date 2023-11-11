@@ -22,7 +22,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 15%;
   text-align: center;
   color: #000000;
 }
@@ -38,7 +38,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 12%;
   text-align: center;
   color: #000000;
 }
@@ -54,7 +54,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 28%;
   text-align: center;
   color: #000000;
 }
@@ -71,13 +71,13 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 12%;
   text-align: center;
   color: #000000;
 }
 .imagem5{
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 20%;
 }
 .imagem5 img{
@@ -87,13 +87,13 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 1%;
   text-align: center;
   color: #000000;
 }
 .imagem6{
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 40%;
 }
 .imagem6 img{
@@ -103,13 +103,13 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 8%;
   text-align: center;
   color: #000000;
 }
 .imagem7{
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 60%;
 }
 .imagem7 img{
@@ -119,13 +119,13 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 27%;
   text-align: center;
   color: #000000;
 }
 .imagem8{
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 80%;
 }
 .imagem8 img{
@@ -135,13 +135,13 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 19%;
   text-align: center;
   color: #000000;
 }
 .imagem9{
   position: absolute;
-  top: 125%;
+  top: 105%;
   left: 20%;
 }
 .imagem9 img{
@@ -151,20 +151,20 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 18%;
   text-align: center;
   color: #000000;
 }
 .texto{
   position: absolute;
-  top: 185%;
+  top: 155%;
   left: 20%;
   font-family: Alice;
   color: #000000;
 }
 .imagem10{
   position: absolute;
-  top: 193%;
+  top: 163%;
   left: 20%;
 }
 .imagem10 img{
@@ -174,13 +174,13 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 1%;
   text-align: center;
   color: #000000;
 }
 .imagem11{
   position: absolute;
-  top: 193%;
+  top: 163%;
   left: 40%;
 }
 .imagem11 img{
@@ -190,7 +190,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 34.2%;
+  left: 3%;
   text-align: center;
   color: #000000;
 }
@@ -246,7 +246,7 @@ a:active {
   <div class="imagem5">
     <img src = "imagens/guarana_1litro.png" width="220px" height="220px">
     <div class="texto5">
-    <p>GUARANÁ 1lt<br>
+    <p>GUARANÁ ANTÁRCTICA 1lt<br>
     R$6,00</p>
     </div>
   </div>
@@ -254,7 +254,7 @@ a:active {
   <div class="imagem6">
     <img src = "imagens/guarana_2litros.png" width="220px" height="220px">
     <div class="texto6">
-    <p>GUARANÁ 2lt<br>
+    <p>GUARANÁ POTY 2lt<br>
     R$9,00</p>
     </div>
   </div>
