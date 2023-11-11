@@ -44,7 +44,7 @@ body {margin:0;}
     <p>Pastel de Filé Especial<br>
     P R$17,00<br>
     G R$20,00<br><br>
-    Ingredientes: Com Queijo, Catupiry e Alho frito</p>
+    Ingredientes: Filé com Queijo, Catupiry e Alho frito</p>
   </div>
 </body>
 

@@ -37,11 +37,11 @@ body {margin:0;}
 <body style="background-color:#FFE780">
 <?php require '../barra_lateral_pasta.php'?>
   <div class="imagem-pastel">
-    <img src = "../imagens/doce_de_leite.png" width="50%" height="50%">
+    <img src = "../imagens/doce_de_leite.png" width="45%" height="45%">
   </div>
 
   <div class="texto">
-    <p>Pastel de Doce de Leite<br>
+    <p>Pastel de Doce de Leite com Castanha<br>
     P R$8,00<br>
     G R$11,00<br><br>
     Ingredientes: Doce de leite e Castanha</p>

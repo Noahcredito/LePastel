@@ -24,7 +24,7 @@ body {margin:0;}
   position: absolute;
   font-family: Alice;
   font-size: 20px;
-  left: 16%;
+  left: 1%;
   text-align: center;
 }
 
@@ -124,7 +124,7 @@ a:active {
   <div class="imagem1">
     <img src = "../imagens/doce_de_leite.png" width="220px" height="220px">
     <div class="texto1">
-    <a href="pastel_doce_de_leite.php">DOCE DE LEITE</a>
+    <a href="pastel_doce_de_leite.php">DOCE DE LEITE COM CASTANHA</a>
     <p>P R$8,00<br>
     G R$11,00</p>
     </div>
