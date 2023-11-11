@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -76,7 +80,7 @@
     <h3> Alteração do Administrador </h3>
     <?php
     require "../conexao.php";
-    require"../barra_lateral_pasta.php";
+    require "../barra_lateral_pasta.php";
 
     $id = $_SESSION["user_id"];
 
@@ -86,9 +90,9 @@
 
     $dados = mysqli_fetch_assoc($resultado);
 
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
+    $nome = $dados["nome_adm"];
+    $email = $dados["email_adm"];
+    $senha = $dados["senha_adm"];
 
     ?>
 

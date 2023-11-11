@@ -12,6 +12,7 @@
 
     <?php
     require "../conexao.php";
+    header("refresh:2; url='../index.php'");
 
     $nome = $_POST["nome"];
     $email = $_POST["email"];

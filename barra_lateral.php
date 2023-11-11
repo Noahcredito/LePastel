@@ -173,8 +173,14 @@
         <li><a href="pasteisSalgados/tela_salgados.php">Pastéis Salgados</a></li>
         <li><a href="pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
         <li><a href="tela_bebidas.php">Bebidas</a></li>
-        <li><a href="sorteio/tela_sorteio.php">Sorteio</a></li>
-      </ul>
+        <?php
+        if (!isset($_SESSION['user']) || $_SESSION != 'admin') {
+          echo '</ul>';
+        }else{
+          echo '<li><a href="sorteio/tela_sorteio.php">Sorteio</a></li>';
+          echo '</ul>';
+        }
+        ?>
     </div>
 
     <!--div class="btn-group dropright">
@@ -209,11 +215,11 @@
     echo '<div id="caixaLinks">';
     echo '<a href="cliente/frm_altera_cli.php">Alterar Perfil</a>';
     echo '</div>';
-  }elseif ($_SESSION['user'] == 'admin') {
+  } elseif ($_SESSION['user'] == 'admin') {
     echo '<div id="caixaLinks">';
     echo '<a href="adm/frm_altera_adm.php">Alterar Perfil</a>';
     echo '</div>';
-  }else{
+  } else {
     echo '<div id="caixaLinks">';
     echo '<a>Faça login</a>';
     echo '</div>';
