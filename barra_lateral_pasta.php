@@ -165,8 +165,14 @@ echo"<div class='navbar'>";
             <li><a href="../pasteisSalgados/tela_salgados.php">Pastéis Salgados</a></li>
             <li><a href="../pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
             <li><a href="../tela_bebidas.php">Bebidas</a></li>
-            <li><a href="../sorteio/tela_sorteio.php">Sorteio</a></li>
-        </ul>
+            <?php
+        if (!isset($_SESSION['user']) || $_SESSION['user'] != 'admin') {
+          echo '</ul>';
+        }else{
+          echo '<li><a href="sorteio/tela_sorteio.php">Sorteio</a></li>';
+          echo '</ul>';
+        }
+        ?>
     </div>
   </div>
 
@@ -175,15 +181,19 @@ echo"<div class='navbar'>";
   </div>
 
   <?php
-  if($_SESSION['user']=='comum')
-  echo '<div id="caixaLinks">';
+  if ($_SESSION['user'] == 'comum') {
+    echo '<div id="caixaLinks">';
     echo '<a href="../cliente/frm_altera_cli.php">Alterar Perfil</a>';
-  echo '</div>';
-
-  if($_SESSION['user']=='adm')
-  echo '<div id="caixaLinks">';
+    echo '</div>';
+  } elseif ($_SESSION['user'] == 'admin') {
+    echo '<div id="caixaLinks">';
     echo '<a href="../adm/frm_altera_adm.php">Alterar Perfil</a>';
-  echo '</div>';
+    echo '</div>';
+  } else {
+    echo '<div id="caixaLinks">';
+    echo '<a>Faça login</a>';
+    echo '</div>';
+  }
   ?>
 </div>
 </body>

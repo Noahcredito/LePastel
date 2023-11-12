@@ -201,7 +201,7 @@
         <li><a href="pasteisDoces/tela_doces.php">Pastéis Doces</a></li>
         <li><a href="tela_bebidas.php">Bebidas</a></li>
         <?php
-        if (!isset($_SESSION['user']) || $_SESSION != 'admin') {
+        if (!isset($_SESSION['user']) || $_SESSION['user'] != 'admin') {
           echo '</ul>';
         }else{
           echo '<li><a href="sorteio/tela_sorteio.php">Sorteio</a></li>';

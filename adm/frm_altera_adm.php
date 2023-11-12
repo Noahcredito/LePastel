@@ -76,11 +76,13 @@ session_start();
 
 </head>
 <body>
-  <div class="conteiner">
-    <h3> Alteração do Administrador </h3>
-    <?php
+<?php
     require "../conexao.php";
     require "../barra_lateral_pasta.php";
+
+  echo  '<div class="conteiner">
+    <h3> Alteração do Administrador </h3>';
+    
 
     $id = $_SESSION["user_id"];
 
