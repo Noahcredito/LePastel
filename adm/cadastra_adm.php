@@ -19,9 +19,9 @@
     $senha = $_POST["senha"];
 
     $comandoSql = "INSERT INTO tb_adm
-      (nome_adm, senha_adm, email_adm)
+      (nome_adm, senha_adm, email_adm, status)
       VALUES
-      ('$nome', '$senha', '$email');";
+      ('$nome', '$senha', '$email', 1);";
 
     $resultado = mysqli_query($con, $comandoSql);
 
