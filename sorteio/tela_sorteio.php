@@ -102,7 +102,7 @@ body {
 
     echo '<form action="processa_cadastro.php" method="post">';
 
-    $comandoSql = "select id_cli, nome_cli from tb_cliente";
+    $comandoSql = "select id_cli, nome_cli from tb_cliente where status = 1";
 
     $resultado = mysqli_query($con, $comandoSql);
 
@@ -217,7 +217,7 @@ body {
             xhr.open("GET", "limpar.php", true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert(xhr.responseText);
+                    //alert(xhr.responseText);
                 } else if (xhr.status !== 200) {
                     alert("Erro ao apagar dados.");
                 }
