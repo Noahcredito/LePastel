@@ -219,11 +219,13 @@
   <?php
   if ($_SESSION['user'] == 'comum') {
     echo '<div id="caixaLinks">';
-    echo '<a href="cliente/frm_altera_cli.php">Alterar Perfil</a>';
+    echo '<a href="cliente/frm_altera_cli.php">Alterar Perfil</a><br>';
+    echo '<a href="logout.php">Sair</a>';
     echo '</div>';
   } elseif ($_SESSION['user'] == 'admin') {
     echo '<div id="caixaLinks">';
-    echo '<a href="adm/frm_altera_adm.php">Alterar Perfil</a>';
+    echo '<a href="adm/frm_altera_adm.php">Alterar Perfil</a><br>';
+    echo '<a href="logout.php">Sair</a>';
     echo '</div>';
   } else {
     echo '<div id="caixaLinks">';

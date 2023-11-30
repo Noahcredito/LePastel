@@ -6,7 +6,9 @@ session_start();
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" media="all">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
+    media="all">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
@@ -16,6 +18,7 @@ session_start();
       margin: 0;
       padding: 0;
     }
+
     .header {
       margin-left: auto;
       left: 17%;
@@ -46,6 +49,7 @@ session_start();
       font-family: Alice;
       margin-top: 20px;
     }
+
     .imagem1 {
       padding: 0.1px;
       position: absolute;
@@ -53,6 +57,7 @@ session_start();
       transform: translateY(-50%);
       left: 60%;
     }
+
     .imagem2 {
       padding: 0.1px;
       position: absolute;
@@ -60,7 +65,7 @@ session_start();
       transform: translateY(-50%);
       left: 64%;
     }
-</style>
+  </style>
 </head>
 
 <body>
@@ -84,24 +89,31 @@ session_start();
     $nomeCliente = $row['nome_cli'];
   } else {
     $nomeCliente = null;
-  };
-if (isset($_SESSION['user'])){
-  echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
-if ($nomeCliente) {
-    echo "Cliente sorteado: $nomeCliente";
-}}else{
-  echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
-if ($nomeCliente) {
-    echo "Faça login para ver o cliente sorteado";
-}}
-echo "</div>";
+  }
+  ;
+  if (isset($_SESSION['user'])) {
+    echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
+    if ($nomeCliente) {
+      echo "Cliente sorteado: $nomeCliente";
+    }
+  } else {
+    echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
+    if ($nomeCliente) {
+      echo "Faça login para ver o cliente sorteado";
+    }
+  }
+  echo "</div>";
   ?>
 
-<div class="box">
+  <div class="box">
     <p> SOBRE NÓS </p>
-    <p>A Le Pastel nasceu do sonho da sua fundadora de empreender e compartilhar suas delícias com todos que amam uma boa comida. No ano de 2021 o projeto foi tirado do papel e finalmente o sonho teve início.</p>
-    <p>Iniciamos com poucos sabores e com uma equipe reduzida, mas após 2 anos podemos dizer que conquistamos o paladar dos amantes de pastel da nossa cidade.</p>
-    <p>Hoje contamos com uma ampla estrutura de preparo, entregas e equipe treinada e preparada para garantir que os nossos clientes possam saborear o melhor pastel da cidade, com ingredientes de qualidade, atendimento personalizado e sabor inigualável.</p>
+    <p>A Le Pastel nasceu do sonho da sua fundadora de empreender e compartilhar suas delícias com todos que amam uma
+      boa comida. No ano de 2021 o projeto foi tirado do papel e finalmente o sonho teve início.</p>
+    <p>Iniciamos com poucos sabores e com uma equipe reduzida, mas após 2 anos podemos dizer que conquistamos o paladar
+      dos amantes de pastel da nossa cidade.</p>
+    <p>Hoje contamos com uma ampla estrutura de preparo, entregas e equipe treinada e preparada para garantir que os
+      nossos clientes possam saborear o melhor pastel da cidade, com ingredientes de qualidade, atendimento
+      personalizado e sabor inigualável.</p>
     <p>Escolha o seu sabor preferido e aproveite o pastel mais recheado, saboroso e sequinho de Rio Preto e região.</p>
     <p>Equipe Le Pastel Food Delivery</p>
   </div>
@@ -115,8 +127,11 @@ echo "</div>";
   </div>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </html>
