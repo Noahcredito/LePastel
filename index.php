@@ -85,11 +85,15 @@ session_start();
   } else {
     $nomeCliente = null;
   };
-
+if (isset($_SESSION['user'])){
   echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
 if ($nomeCliente) {
     echo "Cliente sorteado: $nomeCliente";
-}
+}}else{
+  echo "<div class='header' " . (!$nomeCliente ? "style='display: none;'" : '') . ">";
+if ($nomeCliente) {
+    echo "Faça login para ver o cliente sorteado";
+}}
 echo "</div>";
   ?>
 
