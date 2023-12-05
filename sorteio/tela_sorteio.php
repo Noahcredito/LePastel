@@ -71,6 +71,12 @@ body {
     ini_set('session.cookie_httponly', 1);
     session_start();
 
+    if (!isset($_SESSION['user_id'])) {
+        echo "Usuário não autenticado. Faça login antes de continuar.";
+        header("refresh:2; url='../index.php'");
+        exit();
+    }
+
     require '../barra_lateral_pasta.php';
     require '../conexao.php';
     
